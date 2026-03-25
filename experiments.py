@@ -15,8 +15,6 @@ model = AutoModelForCausalLM.from_pretrained(
     model_id,
     device_map="auto",            # Requires accelerate
     dtype=torch.bfloat16,           # Uses Bfloat16 on H200 (way faster)
-    trust_remote_code=True,
-    low_cpu_mem_usage=True
 )
 
 import UQAI.prompt_questions as p
