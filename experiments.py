@@ -416,17 +416,45 @@ def get_predictions_over_n_runs(task_data, prompt_q_list, task):
         predictions_list.append(predictions)
     return predictions_list, solution_answers, acc_list
 
-def get_prediction_list(subject_name, prompt_list, token_limit=1500):
+def get_prediction_list(subject_name, prompt_list, token_limit=8000): # Raised token_limit for H200
     '''
-    Runs the get_predictions_over_n_runs function for a specific subject after removing questions
-    that exceed the token limits.
+    Modified for cais/mmlu compatibility.
     '''
+    # 1. Calculate the max prompt length from your GPT-4 prompt list
     max_size_prompt = np.max(np.array([len(x) for x in prompt_list]))
-    task_data = load_dataset('cais/mmlu', subject_name)
-    task_data_modified = modify_task_data(task_data, token_limit=token_limit,
+    
+    # 2. Load the official CAIS dataset
+    # Note: cais/mmlu uses 'all' or specific subject names as the configuration
+    dataset = load_dataset('cais/mmlu', subject_name)
+    
+    # 3. Reformat CAIS to match your 'lukaemon' style logic
+    # This prevents you from having to rewrite every other function in your script
+    int_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
+    
+    reformatted_data = {}
+    for split in ['train', 'validation', 'test']:
+        reformatted_data[split] = dataset[split].map(lambda x: {
+            'input': x['question'],         # Rename 'question' to 'input'
+            'A': x['choices'][0],
+            'B': x['choices'][1],
+            'C': x['choices'][2],
+            'D': x['choices'][3],
+            'target': int_to_letter[x['answer']] # Convert 0-3 to A-D
+        })
+
+    # 4. Apply your length filter
+    # Now that it's reformatted, modify_task_data will work perfectly
+    task_data_modified = modify_task_data(reformatted_data, 
+                                          token_limit=token_limit,
                                           max_size_prompt_len=max_size_prompt)
-    prediction_lists, solution_answers, avg_acc = get_predictions_over_n_runs(task_data_modified,
-                                                                     prompt_list, subject_name)
+    
+    # 5. Run the actual inference
+    prediction_lists, solution_answers, avg_acc = get_predictions_over_n_runs(
+        task_data_modified, 
+        prompt_list, 
+        subject_name
+    )
+    
     return prediction_lists, solution_answers, avg_acc
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
