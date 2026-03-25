@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
 import getpass
 
-model_id = "unsloth/Llama-3.2-3B-Instruct-bnb-4bit"
+model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 
 # 1. Load the tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_id)
