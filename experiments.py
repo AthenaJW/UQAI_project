@@ -57,13 +57,13 @@ import pickle
 
 # List of task we consider
 task_list = ['college_computer_science'#, 'formal_logic', 'high_school_computer_science',
-             #'computer_security', 'machine_learning',
+             'computer_security', 'machine_learning',
 
-             #'clinical_knowledge', 'high_school_biology', 'anatomy', 'college_chemistry',
-             #'college_medicine', 'professional_medicine',
+             'clinical_knowledge', 'high_school_biology', 'anatomy', 'college_chemistry',
+             'college_medicine', 'professional_medicine',
 
-             #'business_ethics', 'professional_accounting', 'public_relations',
-             #'management', 'marketing'
+             'business_ethics', 'professional_accounting', 'public_relations',
+             'management', 'marketing'
              ]
 
 
@@ -459,7 +459,7 @@ def get_prediction_list(subject_name, prompt_list, token_limit=8000): # Raised t
 
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 token_limit = 8000  # Maximum size of tokens used in forward pass.
-n = 1 # number of different MMLU based prompts used.
+n = 10 # number of different MMLU based prompts used.
 task_list = task_list
 
 int_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
