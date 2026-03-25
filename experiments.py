@@ -6,6 +6,22 @@ import getpass
 from transformers import logging
 logging.set_verbosity_debug()
 from huggingface_hub import whoami
+
+import logging
+import sys
+
+# 1. Force transformers to tell us everything
+from transformers.utils import logging as hf_logging
+hf_logging.set_verbosity_debug() 
+
+# 2. Redirect all stdout/stderr to flush immediately
+# This ensures that even if it crashes, the last line is in your .out file
+def flush_print(*args, **kwargs):
+    print(*args, **kwargs, flush=True)
+
+# Replace the built-in print with our flushing version
+import builtins
+builtins.print = flush_print
 print(whoami())
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 
@@ -14,11 +30,20 @@ tokenizer = AutoTokenizer.from_pretrained(model_id)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "left"
 
-model = AutoModelForCausalLM.from_pretrained(
-    model_id,
-    device_map="auto",            # Requires accelerate
-    dtype=torch.bfloat16,           # Uses Bfloat16 on H200 (way faster)
-)
+
+try:
+    print("--- ATTEMPTING MODEL LOAD ---")
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        device_map="auto",            # Requires accelerate
+        dtype=torch.bfloat16,           # Uses Bfloat16 on H200 (way faster)
+    )
+    print("--- LOAD SUCCESSFUL ---")
+except Exception as e:
+    print(f"!!! CRITICAL LOAD ERROR: {e}")
+    import traceback
+    traceback.print_exc()
+    sys.exit(1)
 
 import UQAI.prompt_questions as p
 import numpy as np
