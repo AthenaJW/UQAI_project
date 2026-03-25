@@ -10,6 +10,9 @@ from huggingface_hub import whoami
 import logging
 import sys
 
+
+sys.stdout = os.fdopen(sys.stdout.fileno(), 'w', buffering=1)
+sys.stderr = os.fdopen(sys.stderr.fileno(), 'w', buffering=1)
 # 1. Force transformers to tell us everything
 from transformers.utils import logging as hf_logging
 hf_logging.set_verbosity_debug() 
@@ -474,7 +477,7 @@ save_dir = ""
 
 # Mapping to turn 0-3 into A-D
 int_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
-
+print("here")
 for subject_name in task_list:
     # 1. Load the modern dataset
     raw_dataset = load_dataset('cais/mmlu', subject_name)
