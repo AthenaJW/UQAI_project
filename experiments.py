@@ -14,8 +14,9 @@ tokenizer.padding_side = "left"
 # 2. Load the model directly to your Mac's GPU (MPS)
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
-    device_map="mps",       # Tells it to use the Apple M5 GPU
-    torch_dtype=torch.float16, 
+    device_map="auto",            # Requires accelerate
+    torch_dtype="auto",           # Uses Bfloat16 on H200 (way faster)
+    trust_remote_code=True,
     low_cpu_mem_usage=True
 )
 
