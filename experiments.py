@@ -432,7 +432,7 @@ def get_prediction_list(subject_name, prompt_list, token_limit=8000): # Raised t
     int_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
     
     reformatted_data = {}
-    for split in ['train', 'validation', 'test']:
+    for split in ['dev', 'validation', 'test']:
         reformatted_data[split] = dataset[split].map(lambda x: {
             'input': x['question'],         # Rename 'question' to 'input'
             'A': x['choices'][0],
