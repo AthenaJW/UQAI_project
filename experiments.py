@@ -3,7 +3,10 @@ import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
 import getpass
-
+from transformers import logging
+logging.set_verbosity_debug()
+from huggingface_hub import whoami
+print(whoami())
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 
 # 1. Load the tokenizer
