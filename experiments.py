@@ -661,3 +661,20 @@ for subject_name in task_list:
     print(f'Average accuracy on {subject_name} is {np.mean(np.array(acc_dicts[subject_name])):.3f}')
 
 print("🎉 ALL SUBJECTS COMPLETE!")
+
+acc_dicts_mmlu = {}
+for task, prompt in zip(task_list, prompt_list):
+    prediction_lists, solution_answers, acc_list = get_prediction_list(task, prompt, token_limit)
+    avg_acc = np.mean(np.array(acc_list))
+    print('*****************************************************************************************')
+    print(f'calculating average accuracy on {task}')
+    print(f'Average accuracy on {task} is {avg_acc:.3f}')
+    acc_dicts_mmlu[task] = acc_list
+    with open("accuracy_gpt_prompts_10.pkl", "wb") as f:
+        pickle.dump(acc_dicts_mmlu, f)
+    scores = np.array([[[a[1] for a in p] for p in predictions] for predictions in prediction_lists])
+
+    answer_map = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
+    targets = np.array(list(map(lambda x: answer_map[x], solution_answers)))
+    np.save(f'{task}_scores.npy', scores)
+    np.save(f'{task}_targets.npy', targets)
