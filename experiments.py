@@ -64,7 +64,6 @@ task_list = ['college_computer_science', 'formal_logic', 'high_school_computer_s
              'management', 'marketing'
              ]
 
-
 class StopOnTokens(StoppingCriteria):
     def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs) -> bool:
         stop_ids = [50278, 50279, 50277, 1, 0]
@@ -254,16 +253,14 @@ def to_tokens_and_logprobs(model, tokenizer, input_texts):
     '''
     all_outputs = []
     all_input_ids = []
-    model.eval() 
-    with torch.no_grad():
-        for text in input_texts:
-            input_ids = tokenizer(text, padding=True, return_tensors="pt").input_ids.to("cuda")
-            outputs = model(input_ids)
-            logits = outputs.logits.detach().cpu()
-            all_outputs.append(logits)
-            all_input_ids.append(input_ids.detach().cpu())
-            del outputs, input_ids
-            torch.cuda.empty_cache()
+    for text in input_texts:
+        input_ids = tokenizer(text, padding=True, return_tensors="pt").input_ids.to("mps")
+        outputs = model(input_ids)
+        logits = outputs.logits.detach().cpu()
+        all_outputs.append(logits)
+        all_input_ids.append(input_ids.detach().cpu())
+        del outputs, input_ids
+        torch.cuda.empty_cache()
 
     all_outputs = torch.concat(all_outputs, 0)[:, -2:-1, :]  # We take the logit corresponding to the option token
     all_input_ids = torch.concat(all_input_ids, 0)[:, -1:]  # We also include the token id for the options
@@ -356,7 +353,7 @@ def get_max_size_prompt_len(task_data, task, n=10, max_allowed_prompt_len=700):
     prompt_question_ids = []
 
     # Safety check: don't loop forever if the dataset is smaller than n
-    max_available = len(task_data)
+    max_available = len(task_data['test'])
 
     while len(prompt_question_ids) < n and i < max_available:
         # get_prompt usually expects the dataset, the subject string, and an index
@@ -427,7 +424,7 @@ def get_prediction_list(subject_name, prompt_list, token_limit=1500):
                                                                      prompt_list, subject_name)
     return prediction_lists, solution_answers, avg_acc
 
-token_limit = 1500  # Maximum size of tokens used in forward pass.
+token_limit = 8000  # Maximum size of tokens used in forward pass.
 n = 10 # number of different MMLU based prompts used.
 task_list = task_list
 
@@ -461,11 +458,12 @@ for subject_name in task_list:
         dataset_dict,
         subject_name,
         n=n,
-        max_allowed_prompt_len=700
+        max_allowed_prompt_len=4000
     )
 
     max_size_prompt_len_dict[subject_name] = max_len
     prompt_question_ids_dict[subject_name] = prompt_question_ids
+print(prompt_question_ids_dict)
 
 acc_dicts = {}
 
@@ -477,7 +475,7 @@ save_dir = ""
 
 # Mapping to turn 0-3 into A-D
 int_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
-print("here")
+
 for subject_name in task_list:
     # 1. Load the modern dataset
     raw_dataset = load_dataset('cais/mmlu', subject_name)
