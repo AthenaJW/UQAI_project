@@ -4,23 +4,13 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
 import getpass
 
-try:
-    # 1. Prompt for token securely (typing will be hidden in terminal)
-    print("Please enter your Hugging Face Access Token (get one at hf.co/settings/tokens):")
-    user_token = getpass.getpass("Token: ")
-    
-    # 2. Direct login using the inputted token
-    # Setting add_to_git_credential=True is actually helpful on the cluster 
-    # so you don't have to keep re-entering it for this session.
-    login(token=user_token, add_to_git_credential=True)
-    
-    # 3. Test if it worked
-    api = HfApi()
-    user_info = api.whoami()
-    print(f"✅ Success! Logged in as: {user_info['fullname']} ({user_info['name']})")
-    
-except Exception as e:
-    print(f"❌ Login failed: {e}")
+
+token = os.getenv("HF_TOKEN")
+if token:
+    login(token=token)
+    print("✅ Logged in using environment variable.")
+else:
+    print("❌ No token found! Script will likely fail.")
 
 from transformers import AutoModelForCausalLM, BitsAndBytesConfig
 import torch
