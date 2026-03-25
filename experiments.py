@@ -422,7 +422,7 @@ def get_prediction_list(subject_name, prompt_list, token_limit=1500):
     that exceed the token limits.
     '''
     max_size_prompt = np.max(np.array([len(x) for x in prompt_list]))
-    task_data = load_dataset('lukaemon/mmlu', subject_name)
+    task_data = load_dataset('cais/mmlu', subject_name)
     task_data_modified = modify_task_data(task_data, token_limit=token_limit,
                                           max_size_prompt_len=max_size_prompt)
     prediction_lists, solution_answers, avg_acc = get_predictions_over_n_runs(task_data_modified,
