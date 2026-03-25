@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 from huggingface_hub import HfApi, login
 import os
