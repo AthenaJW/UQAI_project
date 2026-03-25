@@ -467,6 +467,7 @@ for subject_name in task_list:
     max_size_prompt_len_dict[subject_name] = max_len
     prompt_question_ids_dict[subject_name] = prompt_question_ids
 
+print(prompt_question_ids_dict)
 acc_dicts = {}
 
 import numpy as np
@@ -477,7 +478,6 @@ save_dir = ""
 
 # Mapping to turn 0-3 into A-D
 int_to_letter = {0: 'A', 1: 'B', 2: 'C', 3: 'D'}
-print("here")
 for subject_name in task_list:
     # 1. Load the modern dataset
     raw_dataset = load_dataset('cais/mmlu', subject_name)
