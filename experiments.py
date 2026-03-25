@@ -14,14 +14,9 @@ import sys
 from transformers.utils import logging as hf_logging
 hf_logging.set_verbosity_debug() 
 
-# 2. Redirect all stdout/stderr to flush immediately
-# This ensures that even if it crashes, the last line is in your .out file
-def flush_print(*args, **kwargs):
-    print(*args, **kwargs, flush=True)
 
 # Replace the built-in print with our flushing version
 import builtins
-builtins.print = flush_print
 print(whoami())
 model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
 
