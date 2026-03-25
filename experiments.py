@@ -2,6 +2,7 @@ from huggingface_hub import HfApi, login
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
+import getpass
 
 try:
     # 1. Prompt for token securely (typing will be hidden in terminal)
