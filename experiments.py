@@ -4,14 +4,13 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
 import getpass
 
-model_id = "unsloth/Llama-3.2-3B-Instruct-bnb-4bit" 
+model_id = "meta-llama/Llama-3.2-3B-Instruct"
 
 # 1. Load the tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "left"
 
-# 2. Load the model directly to your Mac's GPU (MPS)
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     device_map="auto",            # Requires accelerate
@@ -231,14 +230,16 @@ def to_tokens_and_logprobs(model, tokenizer, input_texts):
     '''
     all_outputs = []
     all_input_ids = []
-    for text in input_texts:
-        input_ids = tokenizer(text, padding=True, return_tensors="pt").input_ids.to("mps")
-        outputs = model(input_ids)
-        logits = outputs.logits.detach().cpu()
-        all_outputs.append(logits)
-        all_input_ids.append(input_ids.detach().cpu())
-        del outputs, input_ids
-        torch.cuda.empty_cache()
+    model.eval() 
+    with torch.no_grad():
+        for text in input_texts:
+            input_ids = tokenizer(text, padding=True, return_tensors="pt").input_ids.to("cuda")
+            outputs = model(input_ids)
+            logits = outputs.logits.detach().cpu()
+            all_outputs.append(logits)
+            all_input_ids.append(input_ids.detach().cpu())
+            del outputs, input_ids
+            torch.cuda.empty_cache()
 
     all_outputs = torch.concat(all_outputs, 0)[:, -2:-1, :]  # We take the logit corresponding to the option token
     all_input_ids = torch.concat(all_input_ids, 0)[:, -1:]  # We also include the token id for the options
