@@ -56,7 +56,7 @@ from collections import defaultdict
 import pickle
 
 # List of task we consider
-task_list = ['college_computer_science'#, 'formal_logic', 'high_school_computer_science',
+task_list = ['college_computer_science', 'formal_logic', 'high_school_computer_science',
              'computer_security', 'machine_learning',
 
              'clinical_knowledge', 'high_school_biology', 'anatomy', 'college_chemistry',
