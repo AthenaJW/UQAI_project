@@ -4,17 +4,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 import torch
 import getpass
 
-
-token = os.getenv("HF_TOKEN")
-if token:
-    login(token=token)
-    print("✅ Logged in using environment variable.")
-else:
-    print("❌ No token found! Script will likely fail.")
-
-from transformers import AutoModelForCausalLM, BitsAndBytesConfig
-import torch
-
 model_id = "unsloth/Llama-3.2-3B-Instruct-bnb-4bit" 
 
 # 1. Load the tokenizer
