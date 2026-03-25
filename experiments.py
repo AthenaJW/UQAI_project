@@ -14,7 +14,7 @@ tokenizer.padding_side = "left"
 model = AutoModelForCausalLM.from_pretrained(
     model_id,
     device_map="auto",            # Requires accelerate
-    torch_dtype="auto",           # Uses Bfloat16 on H200 (way faster)
+    torch_dtype=torch.bfloat16,           # Uses Bfloat16 on H200 (way faster)
     trust_remote_code=True,
     low_cpu_mem_usage=True
 )
