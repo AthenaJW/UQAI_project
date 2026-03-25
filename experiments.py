@@ -43,7 +43,7 @@ except Exception as e:
     traceback.print_exc()
     sys.exit(1)
 
-import UQAI.prompt_questions as p
+import prompt_questions as p
 import numpy as np
 import torch
 from transformers import StoppingCriteria, StoppingCriteriaList
