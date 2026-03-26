@@ -58,11 +58,11 @@ import pickle
 # List of task we consider
 task_list = [
     # --- Your Original Requests ---
-    'college_computer_science', 'formal_logic', 'high_school_computer_science',
-    'computer_security', 'machine_learning', 'clinical_knowledge', 
-    'high_school_biology', 'anatomy', 'college_chemistry', 'college_medicine', 
-    'professional_medicine', 'business_ethics', 'professional_accounting', 
-    'public_relations', 'management', 'marketing',
+    #'college_computer_science', 'formal_logic', 'high_school_computer_science',
+    #'computer_security', 'machine_learning', 'clinical_knowledge', 
+    #'high_school_biology', 'anatomy', 'college_chemistry', 'college_medicine', 
+    #'professional_medicine', 'business_ethics', 'professional_accounting', 
+    #'public_relations', 'management', 'marketing',
 
     # --- Additional College-Level Subjects ---
     'college_biology', 
@@ -81,13 +81,13 @@ task_list = [
     'high_school_psychology',
     'high_school_statistics',
     'high_school_us_history',
-    'high_school_world_history',
+    'high_school_world_history'
     
-    'virology',
-    'sociology',
-    'philosophy',
-    'logical_fallacies',
-    'global_facts'
+    #'virology',
+    #'sociology',
+    #'philosophy',
+    #'logical_fallacies',
+    #'global_facts'
 ]
 
 
