@@ -61,13 +61,13 @@ task_list = [
     #'college_computer_science', 'formal_logic', 'high_school_computer_science',
     #'computer_security', 'machine_learning', 'clinical_knowledge', 
     #'high_school_biology', 'anatomy', 'college_chemistry', 'college_medicine', 
-    #'professional_medicine', 'business_ethics', 'professional_accounting', 
-    #'public_relations', 'management', 'marketing',
+    'professional_medicine', 'business_ethics', 'professional_accounting', 
+    'public_relations', 'management', 'marketing',
 
     # --- Additional College-Level Subjects ---
-    #'college_biology', 
-    #'college_mathematics', 
-    #'college_physics', 
+    'college_biology', 
+    'college_mathematics', 
+    'college_physics' 
 
     # --- Additional High School-Level Subjects ---
     #'high_school_chemistry',
@@ -75,13 +75,13 @@ task_list = [
     #'high_school_geography',
     #'high_school_government_and_politics',
     #'high_school_macroeconomics',
-    'high_school_mathematics',
-    'high_school_microeconomics',
-    'high_school_physics',
-    'high_school_psychology',
-    'high_school_statistics',
-    'high_school_us_history',
-    'high_school_world_history'
+    #'high_school_mathematics',
+    #'high_school_microeconomics',
+    #'high_school_physics',
+    #'high_school_psychology',
+    #'high_school_statistics',
+    #'high_school_us_history',
+    #'high_school_world_history'
     
     #'virology',
     #'sociology',
