@@ -161,11 +161,11 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
     '''
 
     if prompt_q is None:
-        prompt_set = 'validation'
-        if question_num > len(task_data['validation']['input']) - 1:
-            print('prompt question id exceeds the length of validation set')
-            print('selecting last question of the validation set')
-            question_num = len(task_data['validation']['input']) - 1
+        prompt_set = 'test'
+        if question_num > len(task_data['test']['input']) - 1:
+            print('prompt question id exceeds the length of test set')
+            print('selecting last question of the test set')
+            question_num = len(task_data['test']['input']) - 1
         prompt_add = f'This is a question from {task.replace("_", " ")}.\n'
         prompt_add += f"{task_data[prompt_set]['input'][question_num]}\n"
         for letter in ['A', 'B', 'C', 'D']:
@@ -251,7 +251,7 @@ constructor.\n(A) I only (B) II only (C) III only (D) I, II, and III \nThe corre
         else:
             start = 0
         for i in range(start, len(task_data[split]['input'])):
-            if split == 'validation' and prompt_q_id is not None:
+            if split == 'test' and prompt_q_id is not None:
                 if i == prompt_q_id:
                     # Don't add prompt question to the dataset
                     continue
@@ -382,7 +382,7 @@ def get_max_size_prompt_len(task_data, task, n=10, max_allowed_prompt_len=700):
     prompt_question_ids = []
 
     # Safety check: don't loop forever if the dataset is smaller than n
-    max_available = len(task_data['validation'])
+    max_available = len(task_data['test'])
 
     while len(prompt_question_ids) < n and i < max_available:
         # get_prompt usually expects the dataset, the subject string, and an index
