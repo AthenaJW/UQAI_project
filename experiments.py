@@ -1,6 +1,5 @@
 from datetime import datetime
-from random import random
-
+import random
 from huggingface_hub import HfApi, login
 import os
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
