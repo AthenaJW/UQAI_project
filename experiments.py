@@ -1,4 +1,5 @@
 from datetime import datetime
+from random import random
 
 from huggingface_hub import HfApi, login
 import os
@@ -58,11 +59,11 @@ import pickle
 # List of task we consider
 task_list = [
     # --- Your Original Requests ---
-    #'college_computer_science', 'formal_logic', 'high_school_computer_science',
-    #'computer_security', 'machine_learning', 'clinical_knowledge', 
-    #'high_school_biology', 'anatomy', 'college_chemistry', 'college_medicine', 
-    #'professional_medicine', 'business_ethics', 'professional_accounting', 
-    #'public_relations', 'management', 'marketing',
+    'college_computer_science', 'formal_logic', 'high_school_computer_science',
+    'computer_security', 'machine_learning', 'clinical_knowledge', 
+    'high_school_biology', 'anatomy', 'college_chemistry', 'college_medicine', 
+    'professional_medicine', 'business_ethics', 'professional_accounting', 
+    'public_relations', 'management', 'marketing'
 
     # --- Additional College-Level Subjects ---
     #'college_biology', 
@@ -70,11 +71,11 @@ task_list = [
     #'college_physics' 
 
     # --- Additional High School-Level Subjects ---
-    'high_school_chemistry',
-    'high_school_european_history',
-    'high_school_geography',
-    'high_school_government_and_politics',
-    'high_school_macroeconomics',
+    #'high_school_chemistry',
+    #'high_school_european_history',
+    #'high_school_geography',
+    #'high_school_government_and_politics',
+    #'high_school_macroeconomics',
     #'high_school_mathematics',
     #'high_school_microeconomics',
     #'high_school_physics',
@@ -83,11 +84,11 @@ task_list = [
     #'high_school_us_history',
     #'high_school_world_history'
     
-    'virology',
-    'sociology',
-    'philosophy',
-    'logical_fallacies',
-    'global_facts'
+    #'virology',
+    #'sociology',
+    #'philosophy',
+    #'logical_fallacies',
+    #'global_facts'
 ]
 
 
@@ -159,6 +160,10 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
     We use 10 different prompts and take avergae over them to estimate
     performance on a subject. The function returns the 1-shot question prompt.
     '''
+    options = ['A', 'B', 'C', 'D']
+    correct_answer = task_data[prompt_set]['target'][question_num]
+    wrong_answers = [opt for opt in options if opt != correct_answer]
+    random_wrong = random.choice(wrong_answers)
 
     if prompt_q is None:
         prompt_set = 'test'
@@ -170,11 +175,12 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
         prompt_add += f"{task_data[prompt_set]['input'][question_num]}\n"
         for letter in ['A', 'B', 'C', 'D']:
             prompt_add += '    ' + letter + '. ' + task_data[prompt_set][letter][question_num] + '\n'
-        prompt_add += f"The correct answer is option: {task_data[prompt_set]['target'][question_num]}\n"
+        prompt_add += f"The correct answer is option: {random_wrong}\n"
     else:
         prompt_add = f'This is a question from {task.replace("_", " ")}.'
         prompt_add += prompt_q
         prompt_add += '\n'
+
     prompt_add += f"You are the world's best expert in {task.replace('_', ' ')}. "
     prompt_add += '''Reason step-by-step and answer the following question. '''
     return prompt_add
