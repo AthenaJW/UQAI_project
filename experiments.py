@@ -575,6 +575,7 @@ for subject_name in task_list:
 
         # Passing the transformed task_data
         prompt_add = get_prompt(task_data, task=subject_name, question_num=question_num, prompt_q=None)
+        print(prompt_add)
 
         if j % 5 == 0:
             print(prompt_add)
