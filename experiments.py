@@ -160,10 +160,6 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
     We use 10 different prompts and take avergae over them to estimate
     performance on a subject. The function returns the 1-shot question prompt.
     '''
-    options = ['A', 'B', 'C', 'D']
-    correct_answer = task_data[prompt_set]['target'][question_num]
-    wrong_answers = [opt for opt in options if opt != correct_answer]
-    random_wrong = random.choice(wrong_answers)
 
     if prompt_q is None:
         prompt_set = 'test'
@@ -175,6 +171,10 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
         prompt_add += f"{task_data[prompt_set]['input'][question_num]}\n"
         for letter in ['A', 'B', 'C', 'D']:
             prompt_add += '    ' + letter + '. ' + task_data[prompt_set][letter][question_num] + '\n'
+        options = ['A', 'B', 'C', 'D']
+        correct_answer = task_data[prompt_set]['target'][question_num]
+        wrong_answers = [opt for opt in options if opt != correct_answer]
+        random_wrong = random.choice(wrong_answers)
         prompt_add += f"The correct answer is option: {random_wrong}\n"
     else:
         prompt_add = f'This is a question from {task.replace("_", " ")}.'
