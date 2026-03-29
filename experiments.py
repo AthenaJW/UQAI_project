@@ -159,26 +159,26 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
     We use 10 different prompts and take avergae over them to estimate
     performance on a subject. The function returns the 1-shot question prompt.
     '''
-
-    if prompt_q is None:
-        prompt_set = 'test'
-        if question_num > len(task_data['test']['input']) - 1:
-            print('prompt question id exceeds the length of test set')
-            print('selecting last question of the test set')
-            question_num = len(task_data['test']['input']) - 1
-        prompt_add = f'This is a question from {task.replace("_", " ")}.\n'
-        prompt_add += f"{task_data[prompt_set]['input'][question_num]}\n"
-        for letter in ['A', 'B', 'C', 'D']:
-            prompt_add += '    ' + letter + '. ' + task_data[prompt_set][letter][question_num] + '\n'
-        options = ['A', 'B', 'C', 'D']
-        correct_answer = task_data[prompt_set]['target'][question_num]
-        wrong_answers = [opt for opt in options if opt != correct_answer]
-        random_wrong = random.choice(wrong_answers)
-        prompt_add += f"The correct answer is option: {random_wrong}\n"
-    else:
-        prompt_add = f'This is a question from {task.replace("_", " ")}.'
-        prompt_add += prompt_q
-        prompt_add += '\n'
+    ### comment out for zero shot prompt
+    # if prompt_q is None:
+    #     prompt_set = 'test'
+    #     if question_num > len(task_data['test']['input']) - 1:
+    #         print('prompt question id exceeds the length of test set')
+    #         print('selecting last question of the test set')
+    #         question_num = len(task_data['test']['input']) - 1
+    #     prompt_add = f'This is a question from {task.replace("_", " ")}.\n'
+    #     prompt_add += f"{task_data[prompt_set]['input'][question_num]}\n"
+    #     for letter in ['A', 'B', 'C', 'D']:
+    #         prompt_add += '    ' + letter + '. ' + task_data[prompt_set][letter][question_num] + '\n'
+    #     options = ['A', 'B', 'C', 'D']
+    #     correct_answer = task_data[prompt_set]['target'][question_num]
+    #     wrong_answers = [opt for opt in options if opt != correct_answer]
+    #     random_wrong = random.choice(wrong_answers)
+    #     prompt_add += f"The correct answer is option: {random_wrong}\n"
+    # else:
+    #     prompt_add = f'This is a question from {task.replace("_", " ")}.'
+    #     prompt_add += prompt_q
+    #     prompt_add += '\n'
 
     prompt_add += f"You are the world's best expert in {task.replace('_', ' ')}. "
     prompt_add += '''Reason step-by-step and answer the following question. '''
@@ -575,7 +575,6 @@ for subject_name in task_list:
 
         # Passing the transformed task_data
         prompt_add = get_prompt(task_data, task=subject_name, question_num=question_num, prompt_q=None)
-        print(prompt_add)
 
         if j % 5 == 0:
             print(prompt_add)
