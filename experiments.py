@@ -30,6 +30,8 @@ tokenizer = AutoTokenizer.from_pretrained(model_id)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "left"
 
+N_SHOT = 2
+
 
 try:
     print("--- ATTEMPTING MODEL LOAD ---")
@@ -166,14 +168,20 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
             print('selecting last question of the test set')
             question_num = len(task_data['test']['input']) - 1
         prompt_add = f'This is a question from {task.replace("_", " ")}.\n'
-        #prompt_add += f"{task_data[prompt_set]['input'][question_num]}\n"
-        #for letter in ['A', 'B', 'C', 'D']:
-        #    prompt_add += '    ' + letter + '. ' + task_data[prompt_set][letter][question_num] + '\n'
-        #options = ['A', 'B', 'C', 'D']
-        #correct_answer = task_data[prompt_set]['target'][question_num]
-        #wrong_answers = [opt for opt in options if opt != correct_answer]
-        #random_wrong = random.choice(wrong_answers)
-        #prompt_add += f"The correct answer is option: {random_wrong}\n"
+        for offset in range(N_SHOT):
+            current_idx = question_num + offset
+            
+            # Safety check to stay within dataset bounds
+            if current_idx >= len(task_data[prompt_set]['input']):
+                break
+            prompt_add += f"{task_data[prompt_set]['input'][current_idx]}\n"
+            for letter in ['A', 'B', 'C', 'D']:
+                prompt_add += '    ' + letter + '. ' + task_data[prompt_set][letter][current_idx] + '\n'
+            #options = ['A', 'B', 'C', 'D']
+            correct_answer = task_data[prompt_set]['target'][current_idx]
+            #wrong_answers = [opt for opt in options if opt != correct_answer]
+            #random_wrong = random.choice(wrong_answers)
+            prompt_add += f"The correct answer is option: {correct_answer}\n"
     else:
         prompt_add = f'This is a question from {task.replace("_", " ")}.'
         #prompt_add += prompt_q
@@ -394,11 +402,11 @@ def get_max_size_prompt_len(task_data, task, n=10, max_allowed_prompt_len=700):
         prompt_len = len(prompt_add)
 
         if prompt_len > max_allowed_prompt_len:
-            i += 1
+            i += N_SHOT
             continue
         else:
             prompt_question_ids.append(i)
-            i += 1
+            i += N_SHOT
 
         if prompt_len > max_len:
             max_len = prompt_len
