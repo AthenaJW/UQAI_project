@@ -1,0 +1,94 @@
+loading configuration file config.json from cache at /home/athenaw/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/config.json
+Model config LlamaConfig {
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 128000,
+  "dtype": "bfloat16",
+  "eos_token_id": 128009,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 8192,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_parameters": {
+    "rope_theta": 500000.0,
+    "rope_type": "default"
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "5.3.0",
+  "use_cache": true,
+  "vocab_size": 128256
+}
+
+loading configuration file config.json from cache at /home/athenaw/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/config.json
+Model config LlamaConfig {
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 128000,
+  "dtype": "bfloat16",
+  "eos_token_id": 128009,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 14336,
+  "max_position_embeddings": 8192,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 8,
+  "pad_token_id": null,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_parameters": {
+    "rope_theta": 500000.0,
+    "rope_type": "default"
+  },
+  "tie_word_embeddings": false,
+  "transformers_version": "5.3.0",
+  "use_cache": true,
+  "vocab_size": 128256
+}
+
+loading weights file model.safetensors from cache at /home/athenaw/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/model.safetensors.index.json
+Generate config GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128009,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "use_cache": true
+}
+
+We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:02<14:24,  2.98s/it]Loading weights:   2%|▏         | 5/291 [00:03<02:15,  2.11it/s]Loading weights:   2%|▏         | 7/291 [00:03<01:36,  2.95it/s]Loading weights:   3%|▎         | 10/291 [00:03<00:57,  4.89it/s]Loading weights:   4%|▍         | 13/291 [00:03<00:40,  6.88it/s]Loading weights:   5%|▌         | 15/291 [00:03<00:42,  6.55it/s]Loading weights:   7%|▋         | 19/291 [00:04<00:29,  9.21it/s]Loading weights:   8%|▊         | 22/291 [00:04<00:26, 10.26it/s]Loading weights:   8%|▊         | 24/291 [00:04<00:30,  8.88it/s]Loading weights:   9%|▉         | 27/291 [00:04<00:23, 11.05it/s]Loading weights:  11%|█         | 31/291 [00:05<00:22, 11.37it/s]Loading weights:  11%|█▏        | 33/291 [00:05<00:30,  8.44it/s]Loading weights:  13%|█▎        | 37/291 [00:05<00:21, 12.08it/s]Loading weights:  14%|█▎        | 40/291 [00:06<00:22, 11.26it/s]Loading weights:  14%|█▍        | 42/291 [00:06<00:29,  8.33it/s]Loading weights:  16%|█▌        | 46/291 [00:06<00:20, 11.93it/s]Loading weights:  17%|█▋        | 49/291 [00:06<00:19, 12.48it/s]Loading weights:  18%|█▊        | 51/291 [00:07<00:23, 10.04it/s]Loading weights:  19%|█▉        | 55/291 [00:07<00:19, 12.12it/s]Loading weights:  20%|█▉        | 58/291 [00:07<00:17, 13.47it/s]Loading weights:  21%|██        | 60/291 [00:07<00:21, 10.73it/s]Loading weights:  22%|██▏       | 64/291 [00:08<00:15, 14.47it/s]Loading weights:  23%|██▎       | 67/291 [00:08<00:15, 14.27it/s]Loading weights:  24%|██▎       | 69/291 [00:08<00:20, 10.75it/s]Loading weights:  25%|██▌       | 74/291 [00:08<00:13, 16.23it/s]Loading weights:  26%|██▋       | 77/291 [00:09<00:15, 13.71it/s]Loading weights:  27%|██▋       | 79/291 [00:09<00:16, 12.75it/s]Loading weights:  28%|██▊       | 82/291 [00:09<00:14, 14.84it/s]Loading weights:  29%|██▉       | 85/291 [00:09<00:13, 14.73it/s]Loading weights:  30%|██▉       | 87/291 [00:09<00:19, 10.68it/s]Loading weights:  31%|███▏      | 91/291 [00:10<00:15, 13.09it/s]Loading weights:  32%|███▏      | 94/291 [00:10<00:15, 12.31it/s]Loading weights:  33%|███▎      | 96/291 [00:10<00:18, 10.33it/s]Loading weights:  34%|███▍      | 100/291 [00:10<00:13, 14.27it/s]Loading weights:  35%|███▌      | 103/291 [00:11<00:13, 13.50it/s]Loading weights:  36%|███▌      | 105/291 [00:11<00:19,  9.70it/s]Loading weights:  37%|███▋      | 108/291 [00:11<00:14, 12.30it/s]Loading weights:  38%|███▊      | 110/291 [00:11<00:14, 12.85it/s]Loading weights:  38%|███▊      | 112/291 [00:11<00:15, 11.46it/s]Loading weights:  39%|███▉      | 114/291 [00:12<00:20,  8.51it/s]Loading weights:  41%|████      | 118/291 [00:12<00:14, 12.33it/s]Loading weights:  42%|████▏     | 121/291 [00:12<00:14, 11.60it/s]Loading weights:  42%|████▏     | 123/291 [00:13<00:19,  8.65it/s]Loading weights:  44%|████▎     | 127/291 [00:13<00:13, 12.14it/s]Loading weights:  45%|████▍     | 130/291 [00:13<00:13, 11.97it/s]Loading weights:  45%|████▌     | 132/291 [00:13<00:16,  9.52it/s]Loading weights:  47%|████▋     | 136/291 [00:14<00:12, 12.77it/s]Loading weights:  48%|████▊     | 139/291 [00:14<00:11, 13.23it/s]Loading weights:  48%|████▊     | 141/291 [00:14<00:14, 10.56it/s]Loading weights:  49%|████▉     | 144/291 [00:14<00:11, 12.93it/s]Loading weights:  50%|█████     | 146/291 [00:14<00:10, 14.01it/s]Loading weights:  51%|█████     | 148/291 [00:15<00:10, 13.18it/s]Loading weights:  52%|█████▏    | 150/291 [00:15<00:14,  9.91it/s]Loading weights:  53%|█████▎    | 154/291 [00:15<00:09, 14.62it/s]Loading weights:  54%|█████▍    | 157/291 [00:15<00:08, 15.89it/s]Loading weights:  55%|█████▍    | 160/291 [00:15<00:10, 12.61it/s]Loading weights:  56%|█████▋    | 164/291 [00:16<00:07, 16.72it/s]Loading weights:  57%|█████▋    | 167/291 [00:16<00:09, 13.52it/s]Loading weights:  58%|█████▊    | 169/291 [00:16<00:09, 13.26it/s]Loading weights:  59%|█████▉    | 172/291 [00:16<00:07, 15.41it/s]Loading weights:  60%|██████    | 175/291 [00:16<00:07, 15.72it/s]Loading weights:  61%|██████    | 177/291 [00:17<00:09, 11.97it/s]Loading weights:  62%|██████▏   | 181/291 [00:17<00:06, 16.26it/s]Loading weights:  63%|██████▎   | 184/291 [00:17<00:06, 16.00it/s]Loading weights:  64%|██████▍   | 186/291 [00:17<00:09, 11.11it/s]Loading weights:  66%|██████▌   | 191/291 [00:17<00:06, 16.44it/s]Loading weights:  67%|██████▋   | 194/291 [00:18<00:08, 11.92it/s]Loading weights:  67%|██████▋   | 196/291 [00:18<00:09, 10.31it/s]Loading weights:  69%|██████▊   | 200/291 [00:18<00:06, 14.08it/s]Loading weights:  70%|██████▉   | 203/291 [00:19<00:08, 10.47it/s]Loading weights:  70%|███████   | 205/291 [00:19<00:08,  9.95it/s]Loading weights:  71%|███████   | 207/291 [00:19<00:08, 10.29it/s]Loading weights:  73%|███████▎  | 211/291 [00:19<00:06, 13.14it/s]Loading weights:  73%|███████▎  | 213/291 [00:20<00:07, 10.78it/s]Loading weights:  75%|███████▍  | 217/291 [00:20<00:05, 13.83it/s]Loading weights:  76%|███████▌  | 220/291 [00:20<00:05, 13.43it/s]Loading weights:  76%|███████▋  | 222/291 [00:20<00:06,  9.91it/s]Loading weights:  78%|███████▊  | 226/291 [00:21<00:04, 13.29it/s]Loading weights:  79%|███████▊  | 229/291 [00:21<00:04, 13.71it/s]Loading weights:  79%|███████▉  | 231/291 [00:21<00:05, 10.46it/s]Loading weights:  81%|████████  | 236/291 [00:21<00:03, 15.78it/s]Loading weights:  82%|████████▏ | 239/291 [00:22<00:04, 11.96it/s]Loading weights:  83%|████████▎ | 241/291 [00:22<00:04, 11.82it/s]Loading weights:  84%|████████▍ | 244/291 [00:22<00:03, 13.51it/s]Loading weights:  85%|████████▍ | 247/291 [00:22<00:03, 14.59it/s]Loading weights:  86%|████████▌ | 249/291 [00:23<00:04,  9.90it/s]Loading weights:  87%|████████▋ | 252/291 [00:23<00:03, 11.99it/s]Loading weights:  88%|████████▊ | 256/291 [00:23<00:02, 12.42it/s]Loading weights:  89%|████████▊ | 258/291 [00:24<00:03,  8.61it/s]Loading weights:  90%|████████▉ | 261/291 [00:24<00:03,  9.68it/s]Loading weights:  90%|█████████ | 263/291 [00:24<00:02, 10.99it/s]Loading weights:  91%|█████████ | 265/291 [00:24<00:02, 10.35it/s]Loading weights:  92%|█████████▏| 267/291 [00:25<00:05,  4.45it/s]Loading weights:  93%|█████████▎| 271/291 [00:25<00:02,  6.94it/s]Loading weights:  94%|█████████▍| 274/291 [00:26<00:02,  7.91it/s]Loading weights:  95%|█████████▍| 276/291 [00:26<00:02,  6.19it/s]Loading weights:  96%|█████████▌| 280/291 [00:26<00:01,  8.64it/s]Loading weights:  97%|█████████▋| 283/291 [00:27<00:00,  9.27it/s]Loading weights:  98%|█████████▊| 285/291 [00:27<00:00,  7.96it/s]Loading weights:  99%|█████████▉| 288/291 [00:27<00:00,  9.69it/s]Loading weights: 100%|█████████▉| 290/291 [00:27<00:00, 10.97it/s]Loading weights: 100%|██████████| 291/291 [00:27<00:00, 10.46it/s]
+loading configuration file generation_config.json from cache at /home/athenaw/.cache/huggingface/hub/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2/generation_config.json
+Generate config GenerationConfig {
+  "bos_token_id": 128000,
+  "do_sample": true,
+  "eos_token_id": [
+    128001,
+    128009
+  ],
+  "max_length": 4096,
+  "temperature": 0.6,
+  "top_p": 0.9
+}
+
+Using the latest cached version of the dataset since cais/mmlu couldn't be found on the Hugging Face Hub
+Found the latest cached dataset configuration 'college_computer_science' at /home/athenaw/.cache/huggingface/datasets/cais___mmlu/college_computer_science/0.0.0/c30699e8356da336a370243923dbaf21066bb9fe (last modified on Wed Mar 25 19:08:45 2026).

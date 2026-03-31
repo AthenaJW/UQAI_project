@@ -1,0 +1,1623 @@
+{'type': 'user', 'id': '68db7457d67603788701bf39', 'name': 'athenaw', 'fullname': 'Athena Wang', 'email': 'wangathena68@yahoo.com', 'emailVerified': True, 'canPay': False, 'billingMode': 'prepaid', 'periodEnd': 1775001600, 'isPro': False, 'avatarUrl': '/avatars/1a697e335affd90ec40a5e3462a2bca0.svg', 'orgs': [], 'auth': {'type': 'access_token', 'accessToken': {'displayName': 'LLAma token', 'role': 'read', 'createdAt': '2026-03-18T17:36:31.509Z'}}}
+--- ATTEMPTING MODEL LOAD ---
+--- LOAD SUCCESSFUL ---
+{'college_computer_science': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'formal_logic': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'high_school_computer_science': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'computer_security': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'machine_learning': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'clinical_knowledge': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'high_school_biology': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'anatomy': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'college_chemistry': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'college_medicine': [0, 1, 2, 3, 4, 5, 7, 8, 9, 10], 'professional_medicine': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'business_ethics': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'professional_accounting': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'public_relations': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'management': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'marketing': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+generating predictions for the subject college_computer_science
+Running experiments with test set question_id 0
+This is a question from college computer science.
+The access matrix approach to protection has the difficulty that
+    A. the matrix, if stored directly, is large and can be clumsy to manage
+    B. it is not capable of expressing complex protection requirements
+    C. deciding whether a process has access to a resource is undecidable
+    D. there is no way to express who has rights to change the access matrix itself
+The correct answer is option: A
+You are the world's best expert in college computer science. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for college_computer_science for iteration 0
+Calculating accuracy
+Accuracy on college_computer_science for iteration 0 is 0.38 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for college_computer_science for iteration 1
+Calculating accuracy
+Accuracy on college_computer_science for iteration 1 is 0.41 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for college_computer_science for iteration 2
+Calculating accuracy
+Accuracy on college_computer_science for iteration 2 is 0.38 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for college_computer_science for iteration 3
+Calculating accuracy
+Accuracy on college_computer_science for iteration 3 is 0.38 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for college_computer_science for iteration 4
+Calculating accuracy
+Accuracy on college_computer_science for iteration 4 is 0.37 
+Running experiments with test set question_id 5
+This is a question from college computer science.
+Consider the collection of all undirected graphs with 10 nodes and 6 edges. Let M and m, respectively, be the maximum and minimum number of connected components in any graph in the collection. If a graph has no selfloops and there is at most one edge between any pair of nodes, which of the following is true?
+    A. M = 10, m = 10
+    B. M = 10, m = 1
+    C. M = 7, m = 4
+    D. M = 6, m = 4
+The correct answer is option: C
+You are the world's best expert in college computer science. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for college_computer_science for iteration 5
+Calculating accuracy
+Accuracy on college_computer_science for iteration 5 is 0.33 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for college_computer_science for iteration 6
+Calculating accuracy
+Accuracy on college_computer_science for iteration 6 is 0.36 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for college_computer_science for iteration 7
+Calculating accuracy
+Accuracy on college_computer_science for iteration 7 is 0.41 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for college_computer_science for iteration 8
+Calculating accuracy
+Accuracy on college_computer_science for iteration 8 is 0.34 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for college_computer_science for iteration 9
+Calculating accuracy
+Accuracy on college_computer_science for iteration 9 is 0.36 
+*****************************************************************************************
+calculating average accuracy on college_computer_science
+Average accuracy on college_computer_science is 0.374
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject formal_logic
+Running experiments with test set question_id 0
+This is a question from formal logic.
+Identify the conclusion of the following argument. It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients. The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes. Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts. (Sigmund Freud, The Origin and Development of Psychoanalysis)
+    A. It is hard not to verify in our peers the same weakened intelligence due to emotions that we observe in our everyday patients.
+    B. The arrogance of our consciousness, which in general, belongs to the strongest defense mechanisms, blocks the unconscious complexes.
+    C. Because of this, it is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts.
+    D. It is difficult to convince people of the unconscious, and in turn to teach them what their conscious knowledge contradicts.
+The correct answer is option: D
+You are the world's best expert in formal logic. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for formal_logic for iteration 0
+Calculating accuracy
+Accuracy on formal_logic for iteration 0 is 0.29 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for formal_logic for iteration 1
+Calculating accuracy
+Accuracy on formal_logic for iteration 1 is 0.33 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for formal_logic for iteration 2
+Calculating accuracy
+Accuracy on formal_logic for iteration 2 is 0.28 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for formal_logic for iteration 3
+Calculating accuracy
+Accuracy on formal_logic for iteration 3 is 0.32 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for formal_logic for iteration 4
+Calculating accuracy
+Accuracy on formal_logic for iteration 4 is 0.29 
+Running experiments with test set question_id 5
+This is a question from formal logic.
+ Select the best English interpretation of the given proposition, using the following translation key: Ax: x is an apartment Hx: x is a house Lx: x is large Bxy: x is bigger than y (∃x)[Hx • (∀y)(Ay ⊃ Bxy)]
+    A. Some houses are smaller than all apartments.
+    B. Every house is bigger than every apartment.
+    C. Some apartment is smaller than every house.
+    D. Some houses are bigger than every apartment.
+The correct answer is option: D
+You are the world's best expert in formal logic. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for formal_logic for iteration 5
+Calculating accuracy
+Accuracy on formal_logic for iteration 5 is 0.30 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for formal_logic for iteration 6
+Calculating accuracy
+Accuracy on formal_logic for iteration 6 is 0.32 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for formal_logic for iteration 7
+Calculating accuracy
+Accuracy on formal_logic for iteration 7 is 0.29 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for formal_logic for iteration 8
+Calculating accuracy
+Accuracy on formal_logic for iteration 8 is 0.31 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for formal_logic for iteration 9
+Calculating accuracy
+Accuracy on formal_logic for iteration 9 is 0.28 
+*****************************************************************************************
+calculating average accuracy on formal_logic
+Average accuracy on formal_logic is 0.302
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject high_school_computer_science
+Running experiments with test set question_id 0
+This is a question from high school computer science.
+Let x = 1. What is x << 3 in Python 3?
+    A. 1
+    B. 3
+    C. 8
+    D. 16
+The correct answer is option: C
+You are the world's best expert in high school computer science. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for high_school_computer_science for iteration 0
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 0 is 0.62 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for high_school_computer_science for iteration 1
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 1 is 0.60 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for high_school_computer_science for iteration 2
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 2 is 0.60 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for high_school_computer_science for iteration 3
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 3 is 0.64 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for high_school_computer_science for iteration 4
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 4 is 0.67 
+Running experiments with test set question_id 5
+This is a question from high school computer science.
+Suppose the characters 0,1, . . . ,8,9,A,B,C,D, E,F are used to represent a hexadecimal (base-16) number. Here A = 10, B = 11, . . . ,F = 15. What is the largest base-10 integer that can be represented with a two-digit hexadecimal number, such as 14 or 3A?
+    A. 32
+    B. 225
+    C. 255
+    D. 256
+The correct answer is option: C
+You are the world's best expert in high school computer science. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for high_school_computer_science for iteration 5
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 5 is 0.67 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for high_school_computer_science for iteration 6
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 6 is 0.67 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for high_school_computer_science for iteration 7
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 7 is 0.65 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for high_school_computer_science for iteration 8
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 8 is 0.62 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for high_school_computer_science for iteration 9
+Calculating accuracy
+Accuracy on high_school_computer_science for iteration 9 is 0.65 
+*****************************************************************************************
+calculating average accuracy on high_school_computer_science
+Average accuracy on high_school_computer_science is 0.638
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject computer_security
+Running experiments with test set question_id 0
+This is a question from computer security.
+Which of the following styles of fuzzer is more likely to explore paths covering every line of code in the following program?
+    A. Generational
+    B. Blackbox
+    C. Whitebox
+    D. Mutation-based
+The correct answer is option: C
+You are the world's best expert in computer security. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for computer_security for iteration 0
+Calculating accuracy
+Accuracy on computer_security for iteration 0 is 0.68 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for computer_security for iteration 1
+Calculating accuracy
+Accuracy on computer_security for iteration 1 is 0.63 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for computer_security for iteration 2
+Calculating accuracy
+Accuracy on computer_security for iteration 2 is 0.65 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for computer_security for iteration 3
+Calculating accuracy
+Accuracy on computer_security for iteration 3 is 0.66 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for computer_security for iteration 4
+Calculating accuracy
+Accuracy on computer_security for iteration 4 is 0.65 
+Running experiments with test set question_id 5
+This is a question from computer security.
+______________ is a widespread app’s coding mistake made by developers which could be exploited by an attacker for gaining access or malfunctioning your system.
+    A. Memory leakage
+    B. Buffer-overrun
+    C. Less processing power
+    D. Inefficient programming
+The correct answer is option: B
+You are the world's best expert in computer security. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for computer_security for iteration 5
+Calculating accuracy
+Accuracy on computer_security for iteration 5 is 0.69 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for computer_security for iteration 6
+Calculating accuracy
+Accuracy on computer_security for iteration 6 is 0.66 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for computer_security for iteration 7
+Calculating accuracy
+Accuracy on computer_security for iteration 7 is 0.66 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for computer_security for iteration 8
+Calculating accuracy
+Accuracy on computer_security for iteration 8 is 0.65 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for computer_security for iteration 9
+Calculating accuracy
+Accuracy on computer_security for iteration 9 is 0.68 
+*****************************************************************************************
+calculating average accuracy on computer_security
+Average accuracy on computer_security is 0.658
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject machine_learning
+Running experiments with test set question_id 0
+This is a question from machine learning.
+Statement 1| Linear regression estimator has the smallest variance among all unbiased estimators. Statement 2| The coefficients α assigned to the classifiers assembled by AdaBoost are always non-negative.
+    A. True, True
+    B. False, False
+    C. True, False
+    D. False, True
+The correct answer is option: D
+You are the world's best expert in machine learning. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for machine_learning for iteration 0
+Calculating accuracy
+Accuracy on machine_learning for iteration 0 is 0.41 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for machine_learning for iteration 1
+Calculating accuracy
+Accuracy on machine_learning for iteration 1 is 0.40 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for machine_learning for iteration 2
+Calculating accuracy
+Accuracy on machine_learning for iteration 2 is 0.44 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for machine_learning for iteration 3
+Calculating accuracy
+Accuracy on machine_learning for iteration 3 is 0.54 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for machine_learning for iteration 4
+Calculating accuracy
+Accuracy on machine_learning for iteration 4 is 0.47 
+Running experiments with test set question_id 5
+This is a question from machine learning.
+Statement 1| The log-likelihood of the data will always increase through successive iterations of the expectation maximation algorithm. Statement 2| One disadvantage of Q-learning is that it can only be used when the learner has prior knowledge of how its actions affect its environment.
+    A. True, True
+    B. False, False
+    C. True, False
+    D. False, True
+The correct answer is option: B
+You are the world's best expert in machine learning. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for machine_learning for iteration 5
+Calculating accuracy
+Accuracy on machine_learning for iteration 5 is 0.43 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for machine_learning for iteration 6
+Calculating accuracy
+Accuracy on machine_learning for iteration 6 is 0.47 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for machine_learning for iteration 7
+Calculating accuracy
+Accuracy on machine_learning for iteration 7 is 0.46 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for machine_learning for iteration 8
+Calculating accuracy
+Accuracy on machine_learning for iteration 8 is 0.52 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for machine_learning for iteration 9
+Calculating accuracy
+Accuracy on machine_learning for iteration 9 is 0.48 
+*****************************************************************************************
+calculating average accuracy on machine_learning
+Average accuracy on machine_learning is 0.463
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject clinical_knowledge
+Running experiments with test set question_id 0
+This is a question from clinical knowledge.
+What size of cannula would you use in a patient who needed a rapid blood transfusion (as of 2020 medical knowledge)?
+    A. 18 gauge.
+    B. 20 gauge.
+    C. 22 gauge.
+    D. 24 gauge.
+The correct answer is option: A
+You are the world's best expert in clinical knowledge. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for clinical_knowledge for iteration 0
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 0 is 0.62 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for clinical_knowledge for iteration 1
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 1 is 0.66 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for clinical_knowledge for iteration 2
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 2 is 0.67 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for clinical_knowledge for iteration 3
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 3 is 0.62 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for clinical_knowledge for iteration 4
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 4 is 0.67 
+Running experiments with test set question_id 5
+This is a question from clinical knowledge.
+With an increasing number of sprints the:
+    A. anaerobic contribution progressively increases.
+    B. pH of the muscle falls below 6.0.
+    C. blood glucose concentration falls below 3 mmol/L.
+    D. relative contribution of aerobic metabolism increases.
+The correct answer is option: D
+You are the world's best expert in clinical knowledge. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for clinical_knowledge for iteration 5
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 5 is 0.66 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for clinical_knowledge for iteration 6
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 6 is 0.66 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for clinical_knowledge for iteration 7
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 7 is 0.63 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for clinical_knowledge for iteration 8
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 8 is 0.65 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for clinical_knowledge for iteration 9
+Calculating accuracy
+Accuracy on clinical_knowledge for iteration 9 is 0.67 
+*****************************************************************************************
+calculating average accuracy on clinical_knowledge
+Average accuracy on clinical_knowledge is 0.651
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject high_school_biology
+Running experiments with test set question_id 0
+This is a question from high school biology.
+In a population of giraffes, an environmental change occurs that favors individuals that are tallest. As a result, more of the taller individuals are able to obtain nutrients and survive to pass along their genetic information. This is an example of
+    A. directional selection.
+    B. stabilizing selection.
+    C. sexual selection.
+    D. disruptive selection.
+The correct answer is option: A
+You are the world's best expert in high school biology. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for high_school_biology for iteration 0
+Calculating accuracy
+Accuracy on high_school_biology for iteration 0 is 0.66 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for high_school_biology for iteration 1
+Calculating accuracy
+Accuracy on high_school_biology for iteration 1 is 0.67 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for high_school_biology for iteration 2
+Calculating accuracy
+Accuracy on high_school_biology for iteration 2 is 0.68 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for high_school_biology for iteration 3
+Calculating accuracy
+Accuracy on high_school_biology for iteration 3 is 0.68 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for high_school_biology for iteration 4
+Calculating accuracy
+Accuracy on high_school_biology for iteration 4 is 0.69 
+Running experiments with test set question_id 5
+This is a question from high school biology.
+Which of the following would most likely provide examples of mitotic cell divisions?
+    A. cross section of muscle tissue
+    B. cross section of an anther (site of pollen production in a flower)
+    C. longitudinal section of a shoot tip
+    D. cross section of a leaf
+The correct answer is option: C
+You are the world's best expert in high school biology. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for high_school_biology for iteration 5
+Calculating accuracy
+Accuracy on high_school_biology for iteration 5 is 0.69 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for high_school_biology for iteration 6
+Calculating accuracy
+Accuracy on high_school_biology for iteration 6 is 0.71 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for high_school_biology for iteration 7
+Calculating accuracy
+Accuracy on high_school_biology for iteration 7 is 0.67 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for high_school_biology for iteration 8
+Calculating accuracy
+Accuracy on high_school_biology for iteration 8 is 0.66 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for high_school_biology for iteration 9
+Calculating accuracy
+Accuracy on high_school_biology for iteration 9 is 0.67 
+*****************************************************************************************
+calculating average accuracy on high_school_biology
+Average accuracy on high_school_biology is 0.681
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject anatomy
+Running experiments with test set question_id 0
+This is a question from anatomy.
+A lesion causing compression of the facial nerve at the stylomastoid foramen will cause ipsilateral
+    A. paralysis of the facial muscles.
+    B. paralysis of the facial muscles and loss of taste.
+    C. paralysis of the facial muscles, loss of taste and lacrimation.
+    D. paralysis of the facial muscles, loss of taste, lacrimation and decreased salivation.
+The correct answer is option: A
+You are the world's best expert in anatomy. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for anatomy for iteration 0
+Calculating accuracy
+Accuracy on anatomy for iteration 0 is 0.61 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for anatomy for iteration 1
+Calculating accuracy
+Accuracy on anatomy for iteration 1 is 0.63 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for anatomy for iteration 2
+Calculating accuracy
+Accuracy on anatomy for iteration 2 is 0.63 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for anatomy for iteration 3
+Calculating accuracy
+Accuracy on anatomy for iteration 3 is 0.62 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for anatomy for iteration 4
+Calculating accuracy
+Accuracy on anatomy for iteration 4 is 0.64 
+Running experiments with test set question_id 5
+This is a question from anatomy.
+A patient suffers a broken neck with damage to the spinal cord at the level of the sixth cervical vertebra.
+    A. They will be unable to breathe without life support.
+    B. They will only be able to breathe quietly.
+    C. It is impossible to predict an effect on breathing.
+    D. Breathing will be unaffected.
+The correct answer is option: B
+You are the world's best expert in anatomy. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for anatomy for iteration 5
+Calculating accuracy
+Accuracy on anatomy for iteration 5 is 0.59 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for anatomy for iteration 6
+Calculating accuracy
+Accuracy on anatomy for iteration 6 is 0.59 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for anatomy for iteration 7
+Calculating accuracy
+Accuracy on anatomy for iteration 7 is 0.59 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for anatomy for iteration 8
+Calculating accuracy
+Accuracy on anatomy for iteration 8 is 0.64 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for anatomy for iteration 9
+Calculating accuracy
+Accuracy on anatomy for iteration 9 is 0.63 
+*****************************************************************************************
+calculating average accuracy on anatomy
+Average accuracy on anatomy is 0.616
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject college_chemistry
+Running experiments with test set question_id 0
+This is a question from college chemistry.
+The rate, r, of a zero-order chemical reaction A → B can be expressed as which of the following?
+    A. r = k ln[A]
+    B. r = k [A]^2
+    C. r = k [A]
+    D. r = k
+The correct answer is option: D
+You are the world's best expert in college chemistry. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for college_chemistry for iteration 0
+Calculating accuracy
+Accuracy on college_chemistry for iteration 0 is 0.35 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for college_chemistry for iteration 1
+Calculating accuracy
+Accuracy on college_chemistry for iteration 1 is 0.40 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for college_chemistry for iteration 2
+Calculating accuracy
+Accuracy on college_chemistry for iteration 2 is 0.35 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for college_chemistry for iteration 3
+Calculating accuracy
+Accuracy on college_chemistry for iteration 3 is 0.35 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for college_chemistry for iteration 4
+Calculating accuracy
+Accuracy on college_chemistry for iteration 4 is 0.35 
+Running experiments with test set question_id 5
+This is a question from college chemistry.
+Nitronyl nitroxides are stable radicals in which the unpaired electron is coupled to two equivalent nitrogen nuclei. How many lines will appear in the EPR spectrum of a solution of a rigid nitronyl nitroxide diradical with J << a?
+    A. 3 lines
+    B. 9 lines
+    C. 5 lines
+    D. 7 lines
+The correct answer is option: B
+You are the world's best expert in college chemistry. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for college_chemistry for iteration 5
+Calculating accuracy
+Accuracy on college_chemistry for iteration 5 is 0.35 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for college_chemistry for iteration 6
+Calculating accuracy
+Accuracy on college_chemistry for iteration 6 is 0.36 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for college_chemistry for iteration 7
+Calculating accuracy
+Accuracy on college_chemistry for iteration 7 is 0.36 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for college_chemistry for iteration 8
+Calculating accuracy
+Accuracy on college_chemistry for iteration 8 is 0.37 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for college_chemistry for iteration 9
+Calculating accuracy
+Accuracy on college_chemistry for iteration 9 is 0.37 
+*****************************************************************************************
+calculating average accuracy on college_chemistry
+Average accuracy on college_chemistry is 0.364
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject college_medicine
+Running experiments with test set question_id 0
+This is a question from college medicine.
+A police officer carries out hundreds of traffic stops every year. When his supervisor is reviewing the officer’s records for the past year, he notices that the officer is equally likely to stop people of various genders, ages, and races. However, he is significantly more likely to write tickets for middle-aged white males with dark hair and eyes. When confronted with this fact, the officer truthfully states that he has no idea why that is, and that it must simply be a coincidence. Unbeknownst to the officer, this behavior is tied to the fact that these men look like his father, with whom he had an abusive relationship as a child. What psychological framework would directly address the unconscious bias in his behavior? 
+    A. Behaviorist
+    B. Psychoanalytic
+    C. Cognitive behavioral
+    D. Humanistic
+The correct answer is option: B
+You are the world's best expert in college medicine. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for college_medicine for iteration 0
+Calculating accuracy
+Accuracy on college_medicine for iteration 0 is 0.57 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for college_medicine for iteration 1
+Calculating accuracy
+Accuracy on college_medicine for iteration 1 is 0.59 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for college_medicine for iteration 2
+Calculating accuracy
+Accuracy on college_medicine for iteration 2 is 0.57 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for college_medicine for iteration 3
+Calculating accuracy
+Accuracy on college_medicine for iteration 3 is 0.60 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for college_medicine for iteration 4
+Calculating accuracy
+Accuracy on college_medicine for iteration 4 is 0.56 
+Running experiments with test set question_id 5
+This is a question from college medicine.
+Fatty acids are transported into the mitochondria bound to:
+    A. thiokinase.
+    B. coenzyme A (CoA).
+    C. acetyl-CoA.
+    D. carnitine.
+The correct answer is option: D
+You are the world's best expert in college medicine. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for college_medicine for iteration 5
+Calculating accuracy
+Accuracy on college_medicine for iteration 5 is 0.60 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for college_medicine for iteration 6
+Calculating accuracy
+Accuracy on college_medicine for iteration 6 is 0.59 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for college_medicine for iteration 7
+Calculating accuracy
+Accuracy on college_medicine for iteration 7 is 0.54 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for college_medicine for iteration 8
+Calculating accuracy
+Accuracy on college_medicine for iteration 8 is 0.57 
+Running experiments with test set question_id 10
+Excluding test set question no 10 from dataset
+Predictions Generated for college_medicine for iteration 9
+Calculating accuracy
+Accuracy on college_medicine for iteration 9 is 0.60 
+*****************************************************************************************
+calculating average accuracy on college_medicine
+Average accuracy on college_medicine is 0.580
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject professional_medicine
+Running experiments with test set question_id 0
+This is a question from professional medicine.
+A 67-year-old woman comes to the physician for a follow-up examination. She had a pulmonary embolism and required treatment in the hospital for 3 weeks. She had a retroperitoneal hemorrhage; anticoagulant therapy was temporarily discontinued, and she underwent placement of an inferior vena cava (IVC) filter. She had a hematoma that was resolving on discharge from the hospital 2 weeks ago. Today, she says she has had a persistent sensation of tingling and numbness of her left thigh that she did not report in the hospital because she thought it would go away; the sensation has improved somewhat during the past week. Her only medication is warfarin. Vital signs are within normal limits. Examination of the skin shows no abnormalities. Muscle strength is normal. Sensation to light touch is decreased over a 5 x 5-cm area on the lateral aspect of the left anterior thigh. Which of the following is the most likely cause of this patient's decreased sensation?
+    A. Cerebral infarction during the hospitalization
+    B. Complication of the IVC filter placement
+    C. Compression of the lateral femoral cutaneous nerve
+    D. Hematoma of the left thigh
+The correct answer is option: C
+You are the world's best expert in professional medicine. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for professional_medicine for iteration 0
+Calculating accuracy
+Accuracy on professional_medicine for iteration 0 is 0.59 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for professional_medicine for iteration 1
+Calculating accuracy
+Accuracy on professional_medicine for iteration 1 is 0.59 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for professional_medicine for iteration 2
+Calculating accuracy
+Accuracy on professional_medicine for iteration 2 is 0.59 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for professional_medicine for iteration 3
+Calculating accuracy
+Accuracy on professional_medicine for iteration 3 is 0.63 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for professional_medicine for iteration 4
+Calculating accuracy
+Accuracy on professional_medicine for iteration 4 is 0.61 
+Running experiments with test set question_id 5
+This is a question from professional medicine.
+Six healthy subjects participate in a study of muscle metabolism during which hyperglycemia and hyperinsulinemia is induced. Muscle biopsy specimens obtained from the subjects during the resting state show significantly increased concentrations of malonyl-CoA. The increased malonyl-CoA concentration most likely directly inhibits which of the following processes in these subjects?
+    A. Fatty acid oxidation
+    B. Fatty acid synthesis
+    C. Gluconeogenesis
+    D. Glycogenolysis
+The correct answer is option: A
+You are the world's best expert in professional medicine. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for professional_medicine for iteration 5
+Calculating accuracy
+Accuracy on professional_medicine for iteration 5 is 0.57 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for professional_medicine for iteration 6
+Calculating accuracy
+Accuracy on professional_medicine for iteration 6 is 0.61 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for professional_medicine for iteration 7
+Calculating accuracy
+Accuracy on professional_medicine for iteration 7 is 0.63 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for professional_medicine for iteration 8
+Calculating accuracy
+Accuracy on professional_medicine for iteration 8 is 0.61 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for professional_medicine for iteration 9
+Calculating accuracy
+Accuracy on professional_medicine for iteration 9 is 0.58 
+*****************************************************************************************
+calculating average accuracy on professional_medicine
+Average accuracy on professional_medicine is 0.600
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject business_ethics
+Running experiments with test set question_id 0
+This is a question from business ethics.
+_______ such as bitcoin are becoming increasingly mainstream and have a whole host of associated ethical implications, for example, they are______ and more ______. However, they have also been used to engage in _______.
+    A. Cryptocurrencies, Expensive, Secure, Financial Crime
+    B. Traditional currency, Cheap, Unsecure, Charitable giving
+    C. Cryptocurrencies, Cheap, Secure, Financial crime
+    D. Traditional currency, Expensive, Unsecure, Charitable giving
+The correct answer is option: C
+You are the world's best expert in business ethics. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for business_ethics for iteration 0
+Calculating accuracy
+Accuracy on business_ethics for iteration 0 is 0.56 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for business_ethics for iteration 1
+Calculating accuracy
+Accuracy on business_ethics for iteration 1 is 0.56 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for business_ethics for iteration 2
+Calculating accuracy
+Accuracy on business_ethics for iteration 2 is 0.61 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for business_ethics for iteration 3
+Calculating accuracy
+Accuracy on business_ethics for iteration 3 is 0.59 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for business_ethics for iteration 4
+Calculating accuracy
+Accuracy on business_ethics for iteration 4 is 0.64 
+Running experiments with test set question_id 5
+This is a question from business ethics.
+________, where for example one party possess more resources, unfair distribution of ________, where one party gains more from the relationship, and CSOs being ________, are all limitations and risks of business-CSO collaborations.
+    A. Power imbalance, Benefits, Hoodwinked
+    B. Power imbalance, Resources, Co-opted
+    C. Informational asymmetries, Benefits, Hoodwinked
+    D. Informational asymmetries, Resources, Co-opted
+The correct answer is option: B
+You are the world's best expert in business ethics. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for business_ethics for iteration 5
+Calculating accuracy
+Accuracy on business_ethics for iteration 5 is 0.58 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for business_ethics for iteration 6
+Calculating accuracy
+Accuracy on business_ethics for iteration 6 is 0.57 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for business_ethics for iteration 7
+Calculating accuracy
+Accuracy on business_ethics for iteration 7 is 0.62 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for business_ethics for iteration 8
+Calculating accuracy
+Accuracy on business_ethics for iteration 8 is 0.60 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for business_ethics for iteration 9
+Calculating accuracy
+Accuracy on business_ethics for iteration 9 is 0.59 
+*****************************************************************************************
+calculating average accuracy on business_ethics
+Average accuracy on business_ethics is 0.592
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject professional_accounting
+Running experiments with test set question_id 0
+This is a question from professional accounting.
+You bought a limousine for $98,000 and are planning to rent it for weddings, ceremonies and parties at $245 per hour. If you estimate the car will be hired for 2 hours a day on average, with daily costs at about $50, what is the estimated yearly yield on your investment if you work all year round, i.e. every day of the year, including any festivities and weekends?
+    A. 164%
+    B. 1.64%
+    C. 0.45%
+    D. 183%
+The correct answer is option: A
+You are the world's best expert in professional accounting. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for professional_accounting for iteration 0
+Calculating accuracy
+Accuracy on professional_accounting for iteration 0 is 0.44 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for professional_accounting for iteration 1
+Calculating accuracy
+Accuracy on professional_accounting for iteration 1 is 0.46 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for professional_accounting for iteration 2
+Calculating accuracy
+Accuracy on professional_accounting for iteration 2 is 0.45 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for professional_accounting for iteration 3
+Calculating accuracy
+Accuracy on professional_accounting for iteration 3 is 0.44 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for professional_accounting for iteration 4
+Calculating accuracy
+Accuracy on professional_accounting for iteration 4 is 0.48 
+Running experiments with test set question_id 5
+This is a question from professional accounting.
+An investment project costing $500 today will generate profits of $500 in year five and year ten. If the discount rate is 10%, what is the project’s NPV?
+    A. −$3
+    B. −$27
+    C. $3
+    D. $500
+The correct answer is option: C
+You are the world's best expert in professional accounting. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for professional_accounting for iteration 5
+Calculating accuracy
+Accuracy on professional_accounting for iteration 5 is 0.44 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for professional_accounting for iteration 6
+Calculating accuracy
+Accuracy on professional_accounting for iteration 6 is 0.46 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for professional_accounting for iteration 7
+Calculating accuracy
+Accuracy on professional_accounting for iteration 7 is 0.46 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for professional_accounting for iteration 8
+Calculating accuracy
+Accuracy on professional_accounting for iteration 8 is 0.43 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for professional_accounting for iteration 9
+Calculating accuracy
+Accuracy on professional_accounting for iteration 9 is 0.45 
+*****************************************************************************************
+calculating average accuracy on professional_accounting
+Average accuracy on professional_accounting is 0.450
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject public_relations
+Running experiments with test set question_id 0
+This is a question from public relations.
+Which common public relations tactic involves sending journalists on visits to appropriate locations?
+    A. Media release
+    B. Media tour
+    C. Press room
+    D. Promotional days/weeks
+The correct answer is option: B
+You are the world's best expert in public relations. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for public_relations for iteration 0
+Calculating accuracy
+Accuracy on public_relations for iteration 0 is 0.61 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for public_relations for iteration 1
+Calculating accuracy
+Accuracy on public_relations for iteration 1 is 0.59 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for public_relations for iteration 2
+Calculating accuracy
+Accuracy on public_relations for iteration 2 is 0.62 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for public_relations for iteration 3
+Calculating accuracy
+Accuracy on public_relations for iteration 3 is 0.62 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for public_relations for iteration 4
+Calculating accuracy
+Accuracy on public_relations for iteration 4 is 0.58 
+Running experiments with test set question_id 5
+This is a question from public relations.
+Why should a successful public relations counselor continually review present and future realities for an organization?
+    A. to develop a vision statement
+    B. to interpret trends for management
+    C. to interpret the organization's business plan
+    D. to consider the role public relations might play
+The correct answer is option: B
+You are the world's best expert in public relations. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for public_relations for iteration 5
+Calculating accuracy
+Accuracy on public_relations for iteration 5 is 0.62 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for public_relations for iteration 6
+Calculating accuracy
+Accuracy on public_relations for iteration 6 is 0.62 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for public_relations for iteration 7
+Calculating accuracy
+Accuracy on public_relations for iteration 7 is 0.64 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for public_relations for iteration 8
+Calculating accuracy
+Accuracy on public_relations for iteration 8 is 0.61 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for public_relations for iteration 9
+Calculating accuracy
+Accuracy on public_relations for iteration 9 is 0.62 
+*****************************************************************************************
+calculating average accuracy on public_relations
+Average accuracy on public_relations is 0.613
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject management
+Running experiments with test set question_id 0
+This is a question from management.
+What is the term for a sub-optimal but acceptable outcome of negotiations between parties?
+    A. Bargaining
+    B. Satisficing
+    C. Accepting
+    D. Compromising
+The correct answer is option: B
+You are the world's best expert in management. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for management for iteration 0
+Calculating accuracy
+Accuracy on management for iteration 0 is 0.77 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for management for iteration 1
+Calculating accuracy
+Accuracy on management for iteration 1 is 0.77 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for management for iteration 2
+Calculating accuracy
+Accuracy on management for iteration 2 is 0.78 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for management for iteration 3
+Calculating accuracy
+Accuracy on management for iteration 3 is 0.76 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for management for iteration 4
+Calculating accuracy
+Accuracy on management for iteration 4 is 0.76 
+Running experiments with test set question_id 5
+This is a question from management.
+What is a Gantt chart a type of?
+    A. Work flow design
+    B. Work schedule design
+    C. Work rate design
+    D. Work output design
+The correct answer is option: B
+You are the world's best expert in management. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for management for iteration 5
+Calculating accuracy
+Accuracy on management for iteration 5 is 0.76 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for management for iteration 6
+Calculating accuracy
+Accuracy on management for iteration 6 is 0.78 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for management for iteration 7
+Calculating accuracy
+Accuracy on management for iteration 7 is 0.75 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for management for iteration 8
+Calculating accuracy
+Accuracy on management for iteration 8 is 0.75 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for management for iteration 9
+Calculating accuracy
+Accuracy on management for iteration 9 is 0.78 
+*****************************************************************************************
+calculating average accuracy on management
+Average accuracy on management is 0.766
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+generating predictions for the subject marketing
+Running experiments with test set question_id 0
+This is a question from marketing.
+This is a hierarchy of effects or sequential model used to explain how advertising works:
+    A. ADD.
+    B. AIDA.
+    C. PESTLE.
+    D. SWOT.
+The correct answer is option: B
+You are the world's best expert in marketing. Reason step-by-step and answer the following question. 
+Excluding test set question no 0 from dataset
+Predictions Generated for marketing for iteration 0
+Calculating accuracy
+Accuracy on marketing for iteration 0 is 0.81 
+Running experiments with test set question_id 1
+Excluding test set question no 1 from dataset
+Predictions Generated for marketing for iteration 1
+Calculating accuracy
+Accuracy on marketing for iteration 1 is 0.84 
+Running experiments with test set question_id 2
+Excluding test set question no 2 from dataset
+Predictions Generated for marketing for iteration 2
+Calculating accuracy
+Accuracy on marketing for iteration 2 is 0.81 
+Running experiments with test set question_id 3
+Excluding test set question no 3 from dataset
+Predictions Generated for marketing for iteration 3
+Calculating accuracy
+Accuracy on marketing for iteration 3 is 0.81 
+Running experiments with test set question_id 4
+Excluding test set question no 4 from dataset
+Predictions Generated for marketing for iteration 4
+Calculating accuracy
+Accuracy on marketing for iteration 4 is 0.83 
+Running experiments with test set question_id 5
+This is a question from marketing.
+ The term 'marketing mix' describes:
+    A. A composite analysis of all environmental factors inside and outside the firm.
+    B. A series of business decisions that aid in selling a product.
+    C. The relationship between a firm's marketing strengths and its business weaknesses.
+    D. A blending of four strategic elements to satisfy specific target markets.
+The correct answer is option: D
+You are the world's best expert in marketing. Reason step-by-step and answer the following question. 
+Excluding test set question no 5 from dataset
+Predictions Generated for marketing for iteration 5
+Calculating accuracy
+Accuracy on marketing for iteration 5 is 0.82 
+Running experiments with test set question_id 6
+Excluding test set question no 6 from dataset
+Predictions Generated for marketing for iteration 6
+Calculating accuracy
+Accuracy on marketing for iteration 6 is 0.84 
+Running experiments with test set question_id 7
+Excluding test set question no 7 from dataset
+Predictions Generated for marketing for iteration 7
+Calculating accuracy
+Accuracy on marketing for iteration 7 is 0.82 
+Running experiments with test set question_id 8
+Excluding test set question no 8 from dataset
+Predictions Generated for marketing for iteration 8
+Calculating accuracy
+Accuracy on marketing for iteration 8 is 0.84 
+Running experiments with test set question_id 9
+Excluding test set question no 9 from dataset
+Predictions Generated for marketing for iteration 9
+Calculating accuracy
+Accuracy on marketing for iteration 9 is 0.79 
+*****************************************************************************************
+calculating average accuracy on marketing
+Average accuracy on marketing is 0.822
+✅ Progress saved to Drive: accuracy_mmlu_prompts_10_20260331_023432.pkl
+🔄 Found existing results. Resuming for: ['college_computer_science', 'formal_logic', 'high_school_computer_science', 'computer_security', 'machine_learning', 'clinical_knowledge', 'high_school_biology', 'anatomy', 'college_chemistry', 'college_medicine', 'professional_medicine', 'business_ethics', 'professional_accounting', 'public_relations', 'management', 'marketing']
+⏩ Skipping college_computer_science: Already processed 10 iterations.
+⏩ Skipping formal_logic: Already processed 10 iterations.
+⏩ Skipping high_school_computer_science: Already processed 10 iterations.
+⏩ Skipping computer_security: Already processed 10 iterations.
+⏩ Skipping machine_learning: Already processed 10 iterations.
+⏩ Skipping clinical_knowledge: Already processed 10 iterations.
+⏩ Skipping high_school_biology: Already processed 10 iterations.
+⏩ Skipping anatomy: Already processed 10 iterations.
+⏩ Skipping college_chemistry: Already processed 10 iterations.
+⏩ Skipping college_medicine: Already processed 10 iterations.
+⏩ Skipping professional_medicine: Already processed 10 iterations.
+⏩ Skipping business_ethics: Already processed 10 iterations.
+⏩ Skipping professional_accounting: Already processed 10 iterations.
+⏩ Skipping public_relations: Already processed 10 iterations.
+⏩ Skipping management: Already processed 10 iterations.
+⏩ Skipping marketing: Already processed 10 iterations.
+🎉 ALL SUBJECTS COMPLETE!
+This is a question from college computer science.
+Which of the following sorting algorithms has the best average case performance?
+    A. Bubble Sort
+    B. Quick Sort
+    C. Selection Sort
+    D. Insertion Sort
+The correct answer is option: B
+You are the world's best expert in college computer science. Reason step-by-step and answer the following question. 
+Accuracy on college_computer_science for iteration 0 is 0.34 
+Accuracy on college_computer_science for iteration 1 is 0.41 
+Accuracy on college_computer_science for iteration 2 is 0.37 
+Accuracy on college_computer_science for iteration 3 is 0.40 
+Accuracy on college_computer_science for iteration 4 is 0.43 
+This is a question from college computer science.
+In database terminology, what does SQL stand for?
+    A. Simple Question Language
+    B. Structured Query Language
+    C. Standard Queue Language
+    D. System Query Language
+The correct answer is option: B
+You are the world's best expert in college computer science. Reason step-by-step and answer the following question. 
+Accuracy on college_computer_science for iteration 5 is 0.41 
+Accuracy on college_computer_science for iteration 6 is 0.32 
+Accuracy on college_computer_science for iteration 7 is 0.42 
+Accuracy on college_computer_science for iteration 8 is 0.40 
+Accuracy on college_computer_science for iteration 9 is 0.39 
+*****************************************************************************************
+calculating average accuracy on college_computer_science
+Average accuracy on college_computer_science is 0.389
+This is a question from formal logic.
+What is a 'proposition' in formal logic?
+    A. A question
+    B. An assertion that is either true or false
+    C. An argument
+    D. A hypothesis
+The correct answer is option: B
+You are the world's best expert in formal logic. Reason step-by-step and answer the following question. 
+Accuracy on formal_logic for iteration 0 is 0.32 
+Accuracy on formal_logic for iteration 1 is 0.32 
+Accuracy on formal_logic for iteration 2 is 0.34 
+Accuracy on formal_logic for iteration 3 is 0.34 
+Accuracy on formal_logic for iteration 4 is 0.27 
+This is a question from formal logic.
+What is a 'tautology' in formal logic?
+    A. A statement that is always true
+    B. A statement that is both true and false at the same time
+    C. A statement that is always false
+    D. A statement that is neither true nor false
+The correct answer is option: A
+You are the world's best expert in formal logic. Reason step-by-step and answer the following question. 
+Accuracy on formal_logic for iteration 5 is 0.36 
+Accuracy on formal_logic for iteration 6 is 0.34 
+Accuracy on formal_logic for iteration 7 is 0.31 
+Accuracy on formal_logic for iteration 8 is 0.26 
+Accuracy on formal_logic for iteration 9 is 0.34 
+*****************************************************************************************
+calculating average accuracy on formal_logic
+Average accuracy on formal_logic is 0.319
+This is a question from high school computer science.
+Which of the following is NOT a characteristic of Object-Oriented Programming?
+    A. Encapsulation
+    B. Inheritance
+    C. Normalization
+    D. Polymorphism
+The correct answer is option: C
+You are the world's best expert in high school computer science. Reason step-by-step and answer the following question. 
+Accuracy on high_school_computer_science for iteration 0 is 0.61 
+Accuracy on high_school_computer_science for iteration 1 is 0.62 
+Accuracy on high_school_computer_science for iteration 2 is 0.65 
+Accuracy on high_school_computer_science for iteration 3 is 0.64 
+Accuracy on high_school_computer_science for iteration 4 is 0.61 
+This is a question from high school computer science.
+Which of the following languages is a low-level programming language?
+    A. Python
+    B. Java
+    C. Assembly
+    D. JavaScript
+The correct answer is option: C
+You are the world's best expert in high school computer science. Reason step-by-step and answer the following question. 
+Accuracy on high_school_computer_science for iteration 5 is 0.64 
+Accuracy on high_school_computer_science for iteration 6 is 0.61 
+Accuracy on high_school_computer_science for iteration 7 is 0.65 
+Accuracy on high_school_computer_science for iteration 8 is 0.65 
+Accuracy on high_school_computer_science for iteration 9 is 0.63 
+*****************************************************************************************
+calculating average accuracy on high_school_computer_science
+Average accuracy on high_school_computer_science is 0.631
+This is a question from computer security.
+What is the primary goal of computer security?
+    A. Ensuring system availability
+    B. Protecting user privacy
+    C. Ensuring data integrity
+    D. All of the above
+The correct answer is option: D
+You are the world's best expert in computer security. Reason step-by-step and answer the following question. 
+Accuracy on computer_security for iteration 0 is 0.67 
+Accuracy on computer_security for iteration 1 is 0.67 
+Accuracy on computer_security for iteration 2 is 0.67 
+Accuracy on computer_security for iteration 3 is 0.65 
+Accuracy on computer_security for iteration 4 is 0.70 
+This is a question from computer security.
+Which of these is an authentication factor category?
+    A. Something you know
+    B. Something you read
+    C. Something you hear
+    D. Something you watch
+The correct answer is option: A
+You are the world's best expert in computer security. Reason step-by-step and answer the following question. 
+Accuracy on computer_security for iteration 5 is 0.67 
+Accuracy on computer_security for iteration 6 is 0.70 
+Accuracy on computer_security for iteration 7 is 0.69 
+Accuracy on computer_security for iteration 8 is 0.69 
+Accuracy on computer_security for iteration 9 is 0.71 
+*****************************************************************************************
+calculating average accuracy on computer_security
+Average accuracy on computer_security is 0.682
+This is a question from machine learning.
+Which of the following is a supervised learning algorithm?
+    A. K-means clustering
+    B. Support vector machines
+    C. Principal component analysis
+    D. Latent Dirichlet allocation
+The correct answer is option: B
+You are the world's best expert in machine learning. Reason step-by-step and answer the following question. 
+Accuracy on machine_learning for iteration 0 is 0.49 
+Accuracy on machine_learning for iteration 1 is 0.46 
+Accuracy on machine_learning for iteration 2 is 0.50 
+Accuracy on machine_learning for iteration 3 is 0.46 
+Accuracy on machine_learning for iteration 4 is 0.47 
+This is a question from machine learning.
+Which of the following is a commonly used loss function in regression tasks?
+    A. Mean squared error
+    B. Cross-entropy loss
+    C. Hinge loss
+    D. Kullback-Leibler divergence
+The correct answer is option: A
+You are the world's best expert in machine learning. Reason step-by-step and answer the following question. 
+Accuracy on machine_learning for iteration 5 is 0.47 
+Accuracy on machine_learning for iteration 6 is 0.46 
+Accuracy on machine_learning for iteration 7 is 0.49 
+Accuracy on machine_learning for iteration 8 is 0.52 
+Accuracy on machine_learning for iteration 9 is 0.42 
+*****************************************************************************************
+calculating average accuracy on machine_learning
+Average accuracy on machine_learning is 0.473
+This is a question from clinical knowledge.
+Which of the following is the most common cause of community-acquired pneumonia?
+    A. Streptococcus pneumoniae
+    B. Haemophilus influenzae
+    C. Klebsiella pneumoniae
+    D. Pseudomonas aeruginosa
+The correct answer is option: A
+You are the world's best expert in clinical knowledge. Reason step-by-step and answer the following question. 
+Accuracy on clinical_knowledge for iteration 0 is 0.64 
+Accuracy on clinical_knowledge for iteration 1 is 0.65 
+Accuracy on clinical_knowledge for iteration 2 is 0.66 
+Accuracy on clinical_knowledge for iteration 3 is 0.65 
+Accuracy on clinical_knowledge for iteration 4 is 0.66 
+This is a question from clinical knowledge.
+What is the most common cause of congestive heart failure?
+    A. Coronary artery disease
+    B. Hypertension
+    C. Valvular heart disease
+    D. Cardiomyopathy
+The correct answer is option: A
+You are the world's best expert in clinical knowledge. Reason step-by-step and answer the following question. 
+Accuracy on clinical_knowledge for iteration 5 is 0.66 
+Accuracy on clinical_knowledge for iteration 6 is 0.67 
+Accuracy on clinical_knowledge for iteration 7 is 0.65 
+Accuracy on clinical_knowledge for iteration 8 is 0.63 
+Accuracy on clinical_knowledge for iteration 9 is 0.65 
+*****************************************************************************************
+calculating average accuracy on clinical_knowledge
+Average accuracy on clinical_knowledge is 0.651
+This is a question from high school biology.
+Which of the following cell structures is responsible for producing energy in the form of ATP?
+    A. Nucleus
+    B. Ribosomes
+    C. Mitochondria
+    D. Endoplasmic Reticulum
+The correct answer is option: C
+You are the world's best expert in high school biology. Reason step-by-step and answer the following question. 
+Accuracy on high_school_biology for iteration 0 is 0.67 
+Accuracy on high_school_biology for iteration 1 is 0.68 
+Accuracy on high_school_biology for iteration 2 is 0.70 
+Accuracy on high_school_biology for iteration 3 is 0.68 
+Accuracy on high_school_biology for iteration 4 is 0.65 
+This is a question from high school biology.
+This is a question from high school biology.
+    Which is an example of a prokaryotic organism?
+    A. Yeast
+    B. Amoeba
+    C. Bacterium
+    D. Human
+The correct answer is option: C
+You are the world's best expert in high school biology. Reason step-by-step and answer the following question. 
+Accuracy on high_school_biology for iteration 5 is 0.66 
+Accuracy on high_school_biology for iteration 6 is 0.68 
+Accuracy on high_school_biology for iteration 7 is 0.70 
+Accuracy on high_school_biology for iteration 8 is 0.66 
+Accuracy on high_school_biology for iteration 9 is 0.66 
+*****************************************************************************************
+calculating average accuracy on high_school_biology
+Average accuracy on high_school_biology is 0.675
+This is a question from anatomy.
+What is the largest organ in the human body?
+    A. Liver
+    B. Skin
+    C. Lungs
+    D. Kidneys
+The correct answer is option: B
+You are the world's best expert in anatomy. Reason step-by-step and answer the following question. 
+Accuracy on anatomy for iteration 0 is 0.60 
+Accuracy on anatomy for iteration 1 is 0.60 
+Accuracy on anatomy for iteration 2 is 0.60 
+Accuracy on anatomy for iteration 3 is 0.63 
+Accuracy on anatomy for iteration 4 is 0.66 
+This is a question from anatomy.
+Which part of the human brain is responsible for regulating basic physiological functions such as heart rate, breathing, and blood pressure?
+    A. Cerebrum
+    B. Cerebellum
+    C. Medulla oblongata
+    D. Thalamus
+The correct answer is option: C
+You are the world's best expert in anatomy. Reason step-by-step and answer the following question. 
+Accuracy on anatomy for iteration 5 is 0.60 
+Accuracy on anatomy for iteration 6 is 0.61 
+Accuracy on anatomy for iteration 7 is 0.61 
+Accuracy on anatomy for iteration 8 is 0.65 
+Accuracy on anatomy for iteration 9 is 0.63 
+*****************************************************************************************
+calculating average accuracy on anatomy
+Average accuracy on anatomy is 0.620
+This is a question from college chemistry.
+Which of the following is an example of a compound?
+    A. Oxygen gas
+    B. Water
+    C. Argon gas
+    D. Hydrogen gas
+The correct answer is option: B
+You are the world's best expert in college chemistry. Reason step-by-step and answer the following question. 
+Accuracy on college_chemistry for iteration 0 is 0.31 
+Accuracy on college_chemistry for iteration 1 is 0.37 
+Accuracy on college_chemistry for iteration 2 is 0.36 
+Accuracy on college_chemistry for iteration 3 is 0.39 
+Accuracy on college_chemistry for iteration 4 is 0.34 
+This is a question from college chemistry.
+What is the principle that states that no two electrons in an atom can have the same set of quantum numbers?
+    A. Hund's rule
+    B. The aufbau principle
+    C. The Pauli exclusion principle
+    D. The Heisenberg uncertainty principle
+The correct answer is option: C
+You are the world's best expert in college chemistry. Reason step-by-step and answer the following question. 
+Accuracy on college_chemistry for iteration 5 is 0.39 
+Accuracy on college_chemistry for iteration 6 is 0.35 
+Accuracy on college_chemistry for iteration 7 is 0.37 
+Accuracy on college_chemistry for iteration 8 is 0.40 
+Accuracy on college_chemistry for iteration 9 is 0.34 
+*****************************************************************************************
+calculating average accuracy on college_chemistry
+Average accuracy on college_chemistry is 0.362
+This is a question from college medicine.
+Which of the following is a common type of white blood cell involved in the immune response?
+    A. Erythrocytes
+    B. Neutrophils
+    C. Platelets
+    D. Myocytes
+The correct answer is option: B
+You are the world's best expert in college medicine. Reason step-by-step and answer the following question. 
+Accuracy on college_medicine for iteration 0 is 0.58 
+Accuracy on college_medicine for iteration 1 is 0.58 
+Accuracy on college_medicine for iteration 2 is 0.58 
+Accuracy on college_medicine for iteration 3 is 0.58 
+Accuracy on college_medicine for iteration 4 is 0.58 
+This is a question from college medicine.
+What is the main purpose of the sinoatrial (SA) node in the human heart?
+    A. Oxygenate blood
+    B. Pump blood to the lungs
+    C. Act as the heart's natural pacemaker
+    D. Regulate blood pressure
+The correct answer is option: C
+You are the world's best expert in college medicine. Reason step-by-step and answer the following question. 
+Accuracy on college_medicine for iteration 5 is 0.59 
+Accuracy on college_medicine for iteration 6 is 0.58 
+Accuracy on college_medicine for iteration 7 is 0.61 
+Accuracy on college_medicine for iteration 8 is 0.58 
+Accuracy on college_medicine for iteration 9 is 0.59 
+*****************************************************************************************
+calculating average accuracy on college_medicine
+Average accuracy on college_medicine is 0.585
+This is a question from professional medicine.
+Which of the following best describes the function of the enzyme renin in the human body?
+    A. It stimulates red blood cell production.
+    B. It catalyzes the conversion of angiotensinogen to angiotensin I.
+    C. It acts as a clotting factor in blood coagulation.
+    D. It catalyzes the breakdown of glycogen to glucose.
+The correct answer is option: B
+You are the world's best expert in professional medicine. Reason step-by-step and answer the following question. 
+Accuracy on professional_medicine for iteration 0 is 0.55 
+Accuracy on professional_medicine for iteration 1 is 0.58 
+Accuracy on professional_medicine for iteration 2 is 0.61 
+Accuracy on professional_medicine for iteration 3 is 0.60 
+Accuracy on professional_medicine for iteration 4 is 0.56 
+This is a question from professional medicine.
+What is the most common type of skin cancer?
+    A. Melanoma
+    B. Basal cell carcinoma
+    C. Squamous cell carcinoma
+    D. Kaposi sarcoma
+The correct answer is option: B
+You are the world's best expert in professional medicine. Reason step-by-step and answer the following question. 
+Accuracy on professional_medicine for iteration 5 is 0.61 
+Accuracy on professional_medicine for iteration 6 is 0.60 
+Accuracy on professional_medicine for iteration 7 is 0.60 
+Accuracy on professional_medicine for iteration 8 is 0.60 
+Accuracy on professional_medicine for iteration 9 is 0.58 
+*****************************************************************************************
+calculating average accuracy on professional_medicine
+Average accuracy on professional_medicine is 0.590
+This is a question from business ethics.
+Conflict of interest in business refers to:
+    A. A competition between businesses in the same market
+    B. A situation in which personal interests could potentially harm professional judgement
+    C. A disagreement between employees within a company
+    D. A conflict between a company's shareholders and management
+The correct answer is option: B
+You are the world's best expert in business ethics. Reason step-by-step and answer the following question. 
+Accuracy on business_ethics for iteration 0 is 0.61 
+Accuracy on business_ethics for iteration 1 is 0.58 
+Accuracy on business_ethics for iteration 2 is 0.59 
+Accuracy on business_ethics for iteration 3 is 0.59 
+Accuracy on business_ethics for iteration 4 is 0.66 
+This is a question from business ethics.
+The "triple bottom line" approach to corporate accounting includes consideration of:
+    A. Profit, debt, and equity
+    B. Economic, environmental, and social performance
+    C. Domestic, foreign, and international sales
+    D. Employees, products, and customers
+The correct answer is option: B
+You are the world's best expert in business ethics. Reason step-by-step and answer the following question. 
+Accuracy on business_ethics for iteration 5 is 0.58 
+Accuracy on business_ethics for iteration 6 is 0.60 
+Accuracy on business_ethics for iteration 7 is 0.60 
+Accuracy on business_ethics for iteration 8 is 0.64 
+Accuracy on business_ethics for iteration 9 is 0.60 
+*****************************************************************************************
+calculating average accuracy on business_ethics
+Average accuracy on business_ethics is 0.606
+This is a question from professional accounting.
+Which of the following is used in accounting to analyze the financial health of a business?
+    A. Horizontal analysis
+    B. Vertical analysis
+    C. Ratio analysis
+    D. All of the above
+The correct answer is option: D
+You are the world's best expert in professional accounting. Reason step-by-step and answer the following question. 
+Accuracy on professional_accounting for iteration 0 is 0.45 
+Accuracy on professional_accounting for iteration 1 is 0.43 
+Accuracy on professional_accounting for iteration 2 is 0.44 
+Accuracy on professional_accounting for iteration 3 is 0.48 
+Accuracy on professional_accounting for iteration 4 is 0.45 
+This is a question from professional accounting.
+What is the double-entry system in accounting?
+    A. Every entry to an account requires a corresponding and opposite entry to a different account
+    B. Every entry to an account requires a corresponding and similar entry to a different account
+    C. Every entry to an account requires two opposite entries to the same account
+    D. Every entry to an account requires two similar entries to the same account
+The correct answer is option: A
+You are the world's best expert in professional accounting. Reason step-by-step and answer the following question. 
+Accuracy on professional_accounting for iteration 5 is 0.44 
+Accuracy on professional_accounting for iteration 6 is 0.44 
+Accuracy on professional_accounting for iteration 7 is 0.45 
+Accuracy on professional_accounting for iteration 8 is 0.44 
+Accuracy on professional_accounting for iteration 9 is 0.43 
+*****************************************************************************************
+calculating average accuracy on professional_accounting
+Average accuracy on professional_accounting is 0.447
+This is a question from public relations.
+Which of the following is the primary goal of public relations?
+    A. Selling products directly
+    B. Managing the reputation of an organization
+    C. Creating advertisements
+    D. Providing customer service
+The correct answer is option: B
+You are the world's best expert in public relations. Reason step-by-step and answer the following question. 
+Accuracy on public_relations for iteration 0 is 0.62 
+Accuracy on public_relations for iteration 1 is 0.64 
+Accuracy on public_relations for iteration 2 is 0.60 
+Accuracy on public_relations for iteration 3 is 0.61 
+Accuracy on public_relations for iteration 4 is 0.61 
+This is a question from public relations.
+Which one of the following is NOT a typical role of a public relations professional?
+    A. Writing press releases
+    B. Managing social media accounts
+    C. Implementing SEO strategies
+    D. Producing the organization's financial reports
+The correct answer is option: D
+You are the world's best expert in public relations. Reason step-by-step and answer the following question. 
+Accuracy on public_relations for iteration 5 is 0.65 
+Accuracy on public_relations for iteration 6 is 0.61 
+Accuracy on public_relations for iteration 7 is 0.57 
+Accuracy on public_relations for iteration 8 is 0.61 
+Accuracy on public_relations for iteration 9 is 0.59 
+*****************************************************************************************
+calculating average accuracy on public_relations
+Average accuracy on public_relations is 0.611
+This is a question from management.
+What is the primary goal of strategic management?
+    A. Maximize shareholder wealth
+    B. Maximize employee satisfaction
+    C. Minimize operational costs
+    D. Minimize risk
+The correct answer is option: A
+You are the world's best expert in management. Reason step-by-step and answer the following question. 
+Accuracy on management for iteration 0 is 0.77 
+Accuracy on management for iteration 1 is 0.77 
+Accuracy on management for iteration 2 is 0.75 
+Accuracy on management for iteration 3 is 0.74 
+Accuracy on management for iteration 4 is 0.77 
+This is a question from management.
+What is the main focus of human resource management?
+    A. Financial management
+    B. Employee management
+    C. Strategic management
+    D. Operations management
+The correct answer is option: B
+You are the world's best expert in management. Reason step-by-step and answer the following question. 
+Accuracy on management for iteration 5 is 0.76 
+Accuracy on management for iteration 6 is 0.75 
+Accuracy on management for iteration 7 is 0.75 
+Accuracy on management for iteration 8 is 0.77 
+Accuracy on management for iteration 9 is 0.79 
+*****************************************************************************************
+calculating average accuracy on management
+Average accuracy on management is 0.763
+This is a question from marketing.
+What does the term "market segmentation" refer to?
+    A. Dividing a market into distinct groups of buyers with different needs and preferences
+    B. Identifying the best pricing strategy for a product
+    C. Identifying the target market for a product
+    D. Developing a marketing strategy for a niche market
+The correct answer is option: A
+You are the world's best expert in marketing. Reason step-by-step and answer the following question. 
+Accuracy on marketing for iteration 0 is 0.79 
+Accuracy on marketing for iteration 1 is 0.80 
+Accuracy on marketing for iteration 2 is 0.81 
+Accuracy on marketing for iteration 3 is 0.79 
+Accuracy on marketing for iteration 4 is 0.81 
+This is a question from marketing.
+Which of the following is a type of online advertising?
+    A. Pay-per-click (PPC)
+    B. Content marketing
+    C. Public relations
+    D. Event marketing
+The correct answer is option: A
+You are the world's best expert in marketing. Reason step-by-step and answer the following question. 
+Accuracy on marketing for iteration 5 is 0.80 
+Accuracy on marketing for iteration 6 is 0.80 
+Accuracy on marketing for iteration 7 is 0.78 
+Accuracy on marketing for iteration 8 is 0.78 
+Accuracy on marketing for iteration 9 is 0.80 
+*****************************************************************************************
+calculating average accuracy on marketing
+Average accuracy on marketing is 0.794
