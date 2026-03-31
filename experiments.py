@@ -23,14 +23,14 @@ hf_logging.set_verbosity_debug()
 # Replace the built-in print with our flushing version
 import builtins
 print(whoami())
-model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+model_id = "unsloth/llama-3-8b"
 
 # 1. Load the tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "left"
 
-N_SHOT = 3
+N_SHOT = 1
 
 
 try:
