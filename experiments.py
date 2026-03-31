@@ -184,7 +184,7 @@ def get_prompt(task_data, task, question_num=0, prompt_q=None):
             prompt_add += f"The correct answer is option: {correct_answer}\n"
     else:
         prompt_add = f'This is a question from {task.replace("_", " ")}.'
-        #prompt_add += prompt_q
+        prompt_add += prompt_q
         prompt_add += '\n'
 
     prompt_add += f"You are the world's best expert in {task.replace('_', ' ')}. "
