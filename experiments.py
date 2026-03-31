@@ -30,7 +30,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_id)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "left"
 
-N_SHOT = 3
+N_SHOT = 2
 
 
 try:
